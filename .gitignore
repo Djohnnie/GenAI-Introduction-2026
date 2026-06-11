@@ -11,6 +11,9 @@
 *.sln.docstates
 *.env
 
+# Launch settings (developer-specific)
+**/Properties/launchSettings.json
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

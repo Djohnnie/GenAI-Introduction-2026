@@ -1,0 +1,259 @@
+@* The purchase order form. One component serves two purposes:
+   - "/purchase-orders/new"   -> create (optionally pre-filled from a draft)
+   - "/purchase-orders/{id}"  -> edit an existing order
+   Two @page directives map both routes to this component. *@
+@page "/purchase-orders/new"
+@page "/purchase-orders/{Id:guid}"
+@inject PurchaseOrderStore Store
+@inject PurchaseOrderDraft Draft
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+
+<PageTitle>@(_isNew ? "New purchase order" : "Edit purchase order")</PageTitle>
+
+@if (_order is null)
+{
+    @* Happens when the URL contains an id that is not in the store. *@
+    <MudAlert Severity="Severity.Error" Variant="Variant.Outlined">Purchase order not found.</MudAlert>
+    <MudButton Class="mt-4" Variant="Variant.Outlined" Href="/">Back to overview</MudButton>
+}
+else
+{
+    @* Header with the page title and the Cancel/Save actions. *@
+    <MudStack Row AlignItems="AlignItems.Center" Class="mb-6">
+        <div>
+            <MudText Typo="Typo.h4" Style="font-weight: 600;">
+                @(_isNew ? "New purchase order" : $"Purchase order {_order.PoNumber}")
+            </MudText>
+            <MudText Typo="Typo.body2" Color="Color.Secondary">
+                Fill in the purchase order details below.
+            </MudText>
+        </div>
+        <MudSpacer />
+        <MudButton Variant="Variant.Outlined" Color="Color.Default" Href="/">Cancel</MudButton>
+        <MudButton Variant="Variant.Filled"
+                   Color="Color.Primary"
+                   DropShadow="false"
+                   StartIcon="@Icons.Material.Filled.Save"
+                   OnClick="Save">
+            Save
+        </MudButton>
+    </MudStack>
+
+    @* MudForm groups the inputs for validation. The @ref gives the code
+       block a handle to trigger validation when Save is clicked. *@
+    <MudForm @ref="_form">
+
+        @* Each logical section gets its own outlined card. The inputs use
+           @bind-Value: two-way binding between the input and the model
+           property, so the model is always up to date while typing. *@
+        <MudPaper Outlined Class="pa-6 mb-4">
+            <MudStack Row AlignItems="AlignItems.Center" Spacing="2" Class="mb-4">
+                <MudIcon Icon="@Icons.Material.Outlined.Storefront" Color="Color.Primary" />
+                <MudText Typo="Typo.h6">Vendor</MudText>
+            </MudStack>
+            @* MudGrid uses a 12-column layout: xs=12 means full width on
+               phones, md=6 means half width from medium screens up. *@
+            <MudGrid Spacing="3">
+                <MudItem xs="12" md="6">
+                    <MudTextField @bind-Value="_order.VendorName"
+                                  Label="Vendor name"
+                                  Required RequiredError="Vendor name is required."
+                                  Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField @bind-Value="_order.VendorAddress"
+                                  Label="Vendor address"
+                                  Variant="Variant.Outlined" />
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+
+        <MudPaper Outlined Class="pa-6 mb-4">
+            <MudStack Row AlignItems="AlignItems.Center" Spacing="2" Class="mb-4">
+                <MudIcon Icon="@Icons.Material.Outlined.Description" Color="Color.Primary" />
+                <MudText Typo="Typo.h6">Order</MudText>
+            </MudStack>
+            <MudGrid Spacing="3">
+                <MudItem xs="12" md="4">
+                    <MudTextField @bind-Value="_order.PoNumber"
+                                  Label="PO number"
+                                  Required RequiredError="PO number is required."
+                                  Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12" md="8">
+                    <MudTextField @bind-Value="_order.Description"
+                                  Label="Description"
+                                  Variant="Variant.Outlined" />
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+
+        <MudPaper Outlined Class="pa-6 mb-4">
+            <MudStack Row AlignItems="AlignItems.Center" Spacing="2" Class="mb-4">
+                <MudIcon Icon="@Icons.Material.Outlined.ListAlt" Color="Color.Primary" />
+                <MudText Typo="Typo.h6">Item lines</MudText>
+                <MudSpacer />
+                <MudButton Variant="Variant.Outlined"
+                           Color="Color.Primary"
+                           StartIcon="@Icons.Material.Filled.Add"
+                           OnClick="AddLine">
+                    Add line
+                </MudButton>
+            </MudStack>
+
+            @if (_order.Lines.Count == 0)
+            {
+                <MudText Typo="Typo.body2" Color="Color.Secondary" Class="py-4" Align="Align.Center">
+                    No item lines yet. Use "Add line" to add the first one.
+                </MudText>
+            }
+            else
+            {
+                @* An editable table: every row renders input fields bound to
+                   one PurchaseOrderLine ("context"). Immediate="true" on the
+                   numeric fields updates the model on every keystroke, so the
+                   computed totals refresh live while typing. *@
+                <MudTable Items="_order.Lines" Elevation="0">
+                    <HeaderContent>
+                        <MudTh Style="width:15%">Item code</MudTh>
+                        <MudTh>Description</MudTh>
+                        <MudTh Style="width:12%">Quantity</MudTh>
+                        <MudTh Style="width:16%">Price</MudTh>
+                        <MudTh Style="width:14%; text-align:right">Total</MudTh>
+                        <MudTh Style="width:48px" />
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd DataLabel="Item code">
+                            <MudTextField @bind-Value="context.ItemCode"
+                                          Required RequiredError="Required"
+                                          Margin="Margin.Dense"
+                                          Variant="Variant.Outlined" />
+                        </MudTd>
+                        <MudTd DataLabel="Description">
+                            <MudTextField @bind-Value="context.Description"
+                                          Margin="Margin.Dense"
+                                          Variant="Variant.Outlined" />
+                        </MudTd>
+                        <MudTd DataLabel="Quantity">
+                            <MudNumericField @bind-Value="context.Quantity"
+                                             Min="0"
+                                             Immediate
+                                             Margin="Margin.Dense"
+                                             Variant="Variant.Outlined" />
+                        </MudTd>
+                        <MudTd DataLabel="Price">
+                            <MudNumericField @bind-Value="context.Price"
+                                             Min="0" Format="N2"
+                                             Immediate
+                                             Adornment="Adornment.Start" AdornmentText="€"
+                                             Margin="Margin.Dense"
+                                             Variant="Variant.Outlined" />
+                        </MudTd>
+                        <MudTd DataLabel="Total" Style="text-align:right">
+                            @* TotalPrice is a computed property on the model:
+                               it recalculates automatically on re-render. *@
+                            <MudText Typo="Typo.body2" Style="font-weight: 600;">@context.TotalPrice.ToString("C2")</MudText>
+                        </MudTd>
+                        <MudTd>
+                            <MudIconButton Icon="@Icons.Material.Outlined.Delete"
+                                           Size="Size.Small"
+                                           Color="Color.Error"
+                                           OnClick="@(() => RemoveLine(context))"
+                                           aria-label="Remove line" />
+                        </MudTd>
+                    </RowTemplate>
+                </MudTable>
+            }
+        </MudPaper>
+
+        <MudPaper Outlined Class="pa-6">
+            <MudStack Row AlignItems="AlignItems.Center" Spacing="2" Class="mb-4">
+                <MudIcon Icon="@Icons.Material.Outlined.Calculate" Color="Color.Primary" />
+                <MudText Typo="Typo.h6">Totals</MudText>
+            </MudStack>
+            @* Four equal columns (md=3 each = 12). Only the VAT percentage is
+               editable; the three amounts are computed and read-only. All four
+               use the same Outlined variant so they line up perfectly. *@
+            <MudGrid Spacing="3">
+                <MudItem xs="12" sm="6" md="3">
+                    <MudTextField Value="@_order.TotalAmount.ToString("C2")"
+                                  Label="Total amount (excl. VAT)"
+                                  ReadOnly
+                                  Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12" sm="6" md="3">
+                    <MudNumericField @bind-Value="_order.VatPercentage"
+                                     Label="VAT percentage"
+                                     Min="0" Max="100"
+                                     Immediate
+                                     Adornment="Adornment.End" AdornmentText="%"
+                                     Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12" sm="6" md="3">
+                    <MudTextField Value="@_order.VatAmount.ToString("C2")"
+                                  Label="VAT amount"
+                                  ReadOnly
+                                  Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem xs="12" sm="6" md="3">
+                    <MudTextField Value="@_order.TotalAmountIncludingVat.ToString("C2")"
+                                  Label="Total amount (incl. VAT)"
+                                  ReadOnly
+                                  Variant="Variant.Outlined" />
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+    </MudForm>
+}
+
+@code {
+    // [Parameter] receives the route value from @page "/purchase-orders/{Id:guid}".
+    // It is nullable: on the "/purchase-orders/new" route there is no id.
+    [Parameter]
+    public Guid? Id { get; set; }
+
+    private MudForm? _form;
+    private PurchaseOrder? _order;
+    private bool _isNew;
+
+    // Lifecycle method: runs after route parameters have been set (and again
+    // when they change), which makes it the right place to load the model.
+    protected override void OnParametersSet()
+    {
+        _isNew = Id is null;
+
+        // Three possibilities:
+        // - edit mode: load a clone of the stored order
+        // - new mode with a draft: a document was just analyzed on the Home
+        //   page; Take() returns it (and clears it)
+        // - new mode without draft: start from an empty order
+        _order = _isNew ? Draft.Take() ?? new PurchaseOrder() : Store.Get(Id!.Value);
+    }
+
+    private void AddLine()
+    {
+        _order!.Lines.Add(new PurchaseOrderLine());
+    }
+
+    private void RemoveLine(PurchaseOrderLine line)
+    {
+        _order!.Lines.Remove(line);
+    }
+
+    private async Task Save()
+    {
+        // Run the validation rules declared on the inputs (Required, ...).
+        await _form!.ValidateAsync();
+        if (!_form.IsValid)
+        {
+            Snackbar.Add("Please fix the validation errors before saving.", Severity.Warning);
+            return;
+        }
+
+        // Upsert into the store and go back to the overview.
+        Store.Save(_order!);
+        Snackbar.Add($"Purchase order '{_order!.PoNumber}' saved.", Severity.Success);
+        Navigation.NavigateTo("/");
+    }
+}

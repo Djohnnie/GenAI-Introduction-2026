@@ -1,0 +1,58 @@
+@* The layout wraps every routable page; @Body marks where the page renders.
+   Pages opt in via _Imports.razor (@layout is set globally there by default
+   through Routes.razor -> DefaultLayout). *@
+@inherits LayoutComponentBase
+
+@* MudBlazor providers — these must be rendered once, near the root:
+   - MudThemeProvider injects the theme's CSS variables
+   - the popover/dialog/snackbar providers host their floating elements *@
+<MudThemeProvider Theme="_theme" />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    @* Flat app bar: no shadow (Elevation=0), just a 1px bottom border. *@
+    <MudAppBar Elevation="0" Style="border-bottom: 1px solid var(--mud-palette-lines-default);">
+        <MudIcon Icon="@Icons.Material.Filled.ReceiptLong" Color="Color.Primary" Class="mr-3" />
+        <MudText Typo="Typo.h6" Style="font-weight: 600;">Azure Content Understanding POC</MudText>
+        <MudSpacer />
+        <MudChip T="string" Size="Size.Small" Variant="Variant.Outlined" Color="Color.Primary">
+            POC &middot; in-memory data
+        </MudChip>
+    </MudAppBar>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.Large" Class="my-8">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
+@* Blazor's built-in banner, shown when the server-side circuit crashes. *@
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
+
+@code {
+    // A custom MudBlazor theme: overriding the palette and layout properties
+    // is enough to give the app its own look — flat, light and blue.
+    private readonly MudTheme _theme = new()
+    {
+        PaletteLight = new PaletteLight
+        {
+            Primary = "#2563EB",          // buttons, icons, accents
+            AppbarBackground = "#FFFFFF", // white app bar instead of colored
+            AppbarText = "#1E293B",
+            Background = "#F8FAFC",       // soft gray page background
+            Surface = "#FFFFFF",          // cards stay white
+            TextPrimary = "#1E293B",
+            TextSecondary = "#64748B",
+        },
+        LayoutProperties = new LayoutProperties
+        {
+            DefaultBorderRadius = "10px", // slightly rounder corners everywhere
+        }
+    };
+}
