@@ -10,6 +10,7 @@ var client = new AzureOpenAIClient(new Uri(endpoint), new ApiKeyCredential(key))
 var embeddingClient = client.GetEmbeddingClient("text-embedding-ada-002");
 
 using var dbContext = new FirstNamesDbContext();
+await dbContext.Database.MigrateAsync();
 if (!await dbContext.FirstNames.AnyAsync())
 {
     foreach (var name in Data.FirstNames)
@@ -61,7 +62,7 @@ internal class FirstNamesDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=.\\SQLDEV;Database=AgentFrameworkEmbeddings;Integrated Security=true;Trusted_Connection=True;Encrypt=false");
+        optionsBuilder.UseSqlServer("Server=.;Database=AgentFrameworkEmbeddings;Integrated Security=true;Trusted_Connection=True;Encrypt=false");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
