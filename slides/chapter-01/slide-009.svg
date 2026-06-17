@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4" rx="0"/>
+
+  <!-- Title -->
+  <text
+    x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="-1">How LLMs Actually Work</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4" rx="0"/>
+
+  <!-- Item 1: Tokens -->
+  <circle cx="92" cy="207" r="7" fill="#8b7fd4"/>
+  <text x="115" y="215" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Tokens</text>
+  <text x="115" y="255" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">LLMs read tokens, not characters or words — roughly 3–4 chars each; 1,000 words is ~1,300 tokens</text>
+
+  <!-- Item 2: Tokenisation -->
+  <circle cx="92" cy="355" r="7" fill="#8b7fd4"/>
+  <text x="115" y="363" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Tokenisation</text>
+  <text x="115" y="403" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">Whitespace, punctuation, and camelCase boundaries all create separate tokens — not just whole words</text>
+
+  <!-- Item 3: Embeddings -->
+  <circle cx="92" cy="503" r="7" fill="#8b7fd4"/>
+  <text x="115" y="511" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Embeddings</text>
+  <text x="115" y="551" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">Each token maps to a high-dimensional vector; tokens with similar meaning cluster together mathematically</text>
+
+  <!-- Item 4: Next-Token Prediction -->
+  <circle cx="92" cy="651" r="7" fill="#8b7fd4"/>
+  <text x="115" y="659" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Next-Token Prediction</text>
+  <text x="115" y="699" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">The model's only job: predict the next token; code generation runs this loop hundreds of times</text>
+
+  <!-- Item 5: Temperature & Sampling -->
+  <circle cx="92" cy="799" r="7" fill="#8b7fd4"/>
+  <text x="115" y="807" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Temperature &amp; Sampling</text>
+  <text x="115" y="847" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">Low = deterministic, high = creative — temperature controls how random the output is; same prompt, different results</text>
+</svg>

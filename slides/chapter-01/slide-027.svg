@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cardGlow1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Microsoft AI Foundry Agents</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- ── Diagram ── -->
+
+  <!-- Left box: Microsoft AI Foundry -->
+  <rect x="60" y="162" width="800" height="272" rx="16" fill="#ffffff" fill-opacity="0.10" stroke="#8b7fd4" stroke-width="2"/>
+
+  <text x="460" y="206"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" fill="#8b7fd4" text-anchor="middle">☁️</text>
+  <text x="460" y="246"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">Microsoft AI Foundry</text>
+  <text x="460" y="276"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="21" font-weight="300" fill="#a89fd0" text-anchor="middle">Configure once — update without redeploying your application</text>
+
+  <!-- Config pills: Model · Instructions · Tools · Knowledge -->
+  <rect x="176" y="294" width="100" height="34" rx="17" fill="#8b7fd4" fill-opacity="0.35" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="226" y="317"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Model</text>
+
+  <rect x="292" y="294" width="160" height="34" rx="17" fill="#8b7fd4" fill-opacity="0.35" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="372" y="317"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Instructions</text>
+
+  <rect x="468" y="294" width="100" height="34" rx="17" fill="#8b7fd4" fill-opacity="0.35" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="518" y="317"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Tools</text>
+
+  <rect x="584" y="294" width="152" height="34" rx="17" fill="#8b7fd4" fill-opacity="0.35" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="660" y="317"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Knowledge</text>
+
+  <!-- Divider -->
+  <rect x="100" y="344" width="720" height="2" fill="#8b7fd4" fill-opacity="0.4"/>
+
+  <!-- Agent ID row -->
+  <text x="140" y="372"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0">Agent ID:</text>
+  <rect x="226" y="354" width="594" height="34" rx="8" fill="#8b7fd4" fill-opacity="0.22" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="523" y="376"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="19" font-weight="600" fill="#8b7fd4" text-anchor="middle">asst_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+
+  <text x="460" y="412"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0" text-anchor="middle">Stable identifier — survives app redeployments and upgrades</text>
+
+  <!-- Arrow (center y of boxes = 162 + 136 = 298) -->
+  <text x="876" y="284"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="18" font-weight="300" fill="#a89fd0" text-anchor="middle">Agent ID</text>
+  <line x1="862" y1="298" x2="934" y2="298" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="934,286 956,298 934,310" fill="#8b7fd4"/>
+
+  <!-- Right box: Your Application -->
+  <rect x="956" y="162" width="904" height="272" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+
+  <text x="1408" y="206"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" fill="#8b7fd4" text-anchor="middle">💻</text>
+  <text x="1408" y="246"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">Your Application</text>
+
+  <text x="990" y="282"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="600" fill="#8b7fd4">①</text>
+  <text x="1022" y="282"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#c4baea">ClientSecretCredential(tenantId, clientId, secret)</text>
+
+  <text x="990" y="322"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="600" fill="#8b7fd4">②</text>
+  <text x="1022" y="322"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#c4baea">PersistentAgentsClient → GetAgentAsync("asst_...")</text>
+
+  <text x="990" y="362"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="600" fill="#8b7fd4">③</text>
+  <text x="1022" y="362"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#c4baea">RunStreamingAsync(session, message)</text>
+
+  <text x="1408" y="408"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0" text-anchor="middle">✅ History and sessions live in Foundry — not in your app</text>
+
+  <!-- ── Three cards ── -->
+
+  <!-- Card 1: Configure in Foundry -->
+  <rect x="60" y="460" width="560" height="586" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="460" width="560" height="586" rx="16" fill="url(#cardGlow1)" fill-opacity="0.3"/>
+
+  <text x="340" y="528"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🏗️</text>
+  <text x="340" y="586"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Configure in Foundry</text>
+  <rect x="120" y="604" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="340" y="650"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Choose model and version</text>
+  <text x="340" y="696"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Write system instructions</text>
+  <text x="340" y="742"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Register tools and actions</text>
+  <text x="340" y="788"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Attach knowledge sources</text>
+  <text x="340" y="848"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Change any of these without</text>
+  <text x="340" y="882"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">touching application code</text>
+
+  <!-- Card 2: Persistent by Default -->
+  <rect x="680" y="460" width="560" height="586" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="460" width="560" height="586" rx="16" fill="url(#cardGlow2)" fill-opacity="0.3"/>
+
+  <text x="960" y="528"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">💾</text>
+  <text x="960" y="586"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Persistent by Default</text>
+  <rect x="740" y="604" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="960" y="650"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">History stored in Azure</text>
+  <text x="960" y="696"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Survives application restarts</text>
+  <text x="960" y="742"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Handles many users and sessions</text>
+  <text x="960" y="788"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Full audit trail and logging</text>
+  <text x="960" y="848"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Your application stays stateless</text>
+  <text x="960" y="882"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">even for long-running conversations</text>
+
+  <!-- Card 3: Connect from Code -->
+  <rect x="1300" y="460" width="560" height="586" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="1300" y="460" width="560" height="586" rx="16" fill="url(#cardGlow3)" fill-opacity="0.3"/>
+
+  <text x="1580" y="528"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🔑</text>
+  <text x="1580" y="586"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Connect from Code</text>
+  <rect x="1360" y="604" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="1580" y="650"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Authenticate with a service</text>
+  <text x="1580" y="686"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">principal (tenant, client, secret)</text>
+  <text x="1580" y="742"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">PersistentAgentsClient for</text>
+  <text x="1580" y="778"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">the Foundry REST API</text>
+  <text x="1580" y="848"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Retrieve agent by its stable</text>
+  <text x="1580" y="882"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">asst_... ID — same streaming API</text>
+</svg>

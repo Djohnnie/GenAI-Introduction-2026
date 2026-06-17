@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <marker id="arrowHead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b7fd4"/>
+    </marker>
+    <marker id="arrowHeadGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4ecb71"/>
+    </marker>
+    <marker id="arrowHeadRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e05c5c"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Generative AI — The GAN Idea</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- Subtitle -->
+  <text x="960" y="210"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="300" fill="#c4baea" text-anchor="middle">Two neural networks compete: the generator tries to fool the discriminator, and the discriminator tries not to be fooled</text>
+
+  <!-- ── Step 1: Generative AI box ── -->
+  <rect x="60" y="280" width="380" height="420" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="250" y="360"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="52" fill="#8b7fd4" text-anchor="middle">🎨</text>
+  <text x="250" y="420"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" font-weight="700" fill="#ffffff" text-anchor="middle">Generative AI</text>
+  <text x="250" y="462"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">(Generator)</text>
+  <rect x="100" y="490" width="300" height="2" fill="#8b7fd4" fill-opacity="0.4"/>
+  <text x="250" y="530"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Starts from random</text>
+  <text x="250" y="562"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">noise and learns to</text>
+  <text x="250" y="594"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">produce realistic</text>
+  <text x="250" y="626"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">dog images</text>
+  <text x="250" y="670"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="46" fill="#c4baea" text-anchor="middle">🐶?</text>
+
+  <!-- Arrow: Generator → Dog Image -->
+  <path d="M 440 490 L 600 490" stroke="#8b7fd4" stroke-width="3" fill="none" marker-end="url(#arrowHead)"/>
+  <text x="520" y="472"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="600" fill="#8b7fd4" text-anchor="middle">generates</text>
+
+  <!-- ── Step 2: Dog Image box ── -->
+  <rect x="600" y="360" width="260" height="260" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="730" y="450"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="80" fill="#c4baea" text-anchor="middle">🖼️</text>
+  <text x="730" y="540"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">Generated</text>
+  <text x="730" y="572"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">Image</text>
+  <text x="730" y="610"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#c4baea" text-anchor="middle">(is it a dog?)</text>
+
+  <!-- Arrow: Dog Image → Discriminator -->
+  <path d="M 860 490 L 1020 490" stroke="#8b7fd4" stroke-width="3" fill="none" marker-end="url(#arrowHead)"/>
+  <text x="940" y="472"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="600" fill="#8b7fd4" text-anchor="middle">evaluated by</text>
+
+  <!-- ── Step 3: Discriminator box ── -->
+  <rect x="1020" y="280" width="380" height="420" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="1210" y="360"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="52" fill="#8b7fd4" text-anchor="middle">🔎</text>
+  <text x="1210" y="420"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" font-weight="700" fill="#ffffff" text-anchor="middle">Image Recognition</text>
+  <text x="1210" y="462"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">(Discriminator)</text>
+  <rect x="1060" y="490" width="300" height="2" fill="#8b7fd4" fill-opacity="0.4"/>
+  <text x="1210" y="530"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Trained on real dog</text>
+  <text x="1210" y="562"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">photos — judges if the</text>
+  <text x="1210" y="594"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">generated image looks</text>
+  <text x="1210" y="626"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">like a real dog</text>
+  <text x="1210" y="668"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" fill="#c4baea" text-anchor="middle">Real or fake? 🤔</text>
+
+  <!-- ── Reward arrows ── -->
+
+  <!-- Reward YES → generator (green, curves back) -->
+  <path d="M 1400 390 Q 1680 240 1760 490 Q 1820 700 1210 750 Q 600 800 250 700" stroke="#4ecb71" stroke-width="3" fill="none" stroke-dasharray="8,4" marker-end="url(#arrowHeadGreen)"/>
+
+  <!-- Reward box (top right) -->
+  <rect x="1580" y="300" width="300" height="120" rx="12" fill="#4ecb71" fill-opacity="0.12" stroke="#4ecb71" stroke-width="1.5"/>
+  <text x="1730" y="352"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="700" fill="#4ecb71" text-anchor="middle">✅ Reward</text>
+  <text x="1730" y="390"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#c4baea" text-anchor="middle">Looks like a real dog!</text>
+
+  <!-- Penalty box (bottom right) -->
+  <rect x="1580" y="460" width="300" height="120" rx="12" fill="#e05c5c" fill-opacity="0.12" stroke="#e05c5c" stroke-width="1.5"/>
+  <text x="1730" y="512"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="700" fill="#e05c5c" text-anchor="middle">❌ Penalty</text>
+  <text x="1730" y="550"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#c4baea" text-anchor="middle">Clearly not a dog!</text>
+
+  <!-- Arrow from discriminator to reward/penalty boxes -->
+  <path d="M 1400 380 L 1580 360" stroke="#8b7fd4" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+  <path d="M 1400 520 L 1580 520" stroke="#8b7fd4" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+
+  <!-- ── Bottom result ── -->
+  <rect x="200" y="790" width="1520" height="210" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+
+  <text x="960" y="848"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#8b7fd4" text-anchor="middle">The Outcome</text>
+
+  <text x="960" y="894"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="29" font-weight="300" fill="#c4baea" text-anchor="middle">Over thousands of rounds, the generator improves until its dog images are indistinguishable from real ones.</text>
+  <text x="960" y="938"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="29" font-weight="300" fill="#c4baea" text-anchor="middle">This adversarial loop is how GANs — and modern image-generating AI — learn to create realistic content.</text>
+  <text x="960" y="982"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="29" font-weight="300" fill="#c4baea" text-anchor="middle">RLHF (Reinforcement Learning from Human Feedback) uses the same principle to align language models.</text>
+
+  <!-- GAN acronym footnote -->
+  <text x="960" y="1058"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#8b7fd4" fill-opacity="0.7" text-anchor="middle" letter-spacing="1">GAN — Generative Adversarial Network</text>
+</svg>

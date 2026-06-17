@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <marker id="arrowHead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b7fd4"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">The Reinforcement Learning Loop</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- ── Boxes ── -->
+
+  <!-- Agent box (left) -->
+  <rect x="100" y="440" width="340" height="160" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="270" y="510"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" fill="#8b7fd4" text-anchor="middle">🤖</text>
+  <text x="270" y="564"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="38" font-weight="700" fill="#ffffff" text-anchor="middle">Agent</text>
+
+  <!-- Environment box (center) -->
+  <rect x="790" y="300" width="340" height="160" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="960" y="370"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" fill="#8b7fd4" text-anchor="middle">🌍</text>
+  <text x="960" y="424"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="38" font-weight="700" fill="#ffffff" text-anchor="middle">Environment</text>
+
+  <!-- Interpreter box (right) -->
+  <rect x="1480" y="440" width="340" height="160" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="1650" y="510"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" fill="#8b7fd4" text-anchor="middle">⚖️</text>
+  <text x="1650" y="564"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="38" font-weight="700" fill="#ffffff" text-anchor="middle">Interpreter</text>
+
+  <!-- Model Improvement box (bottom center) -->
+  <rect x="690" y="740" width="540" height="160" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="960" y="810"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" fill="#8b7fd4" text-anchor="middle">📈</text>
+  <text x="960" y="864"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="38" font-weight="700" fill="#ffffff" text-anchor="middle">Model Improvement</text>
+
+  <!-- ── Arrows ── -->
+
+  <!-- Agent → Environment (top, action) -->
+  <path d="M 440 480 Q 615 330 790 370" stroke="#8b7fd4" stroke-width="3" fill="none" marker-end="url(#arrowHead)"/>
+  <text x="580" y="370"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="600" fill="#8b7fd4" text-anchor="middle">Action</text>
+
+  <!-- Environment → Interpreter (right, observation) -->
+  <path d="M 1130 400 Q 1310 430 1480 500" stroke="#8b7fd4" stroke-width="3" fill="none" marker-end="url(#arrowHead)"/>
+  <text x="1330" y="422"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="600" fill="#8b7fd4" text-anchor="middle">Observation</text>
+
+  <!-- Interpreter → Model Improvement (down, reward) -->
+  <path d="M 1650 600 Q 1650 700 1230 790" stroke="#8b7fd4" stroke-width="3" fill="none" marker-end="url(#arrowHead)"/>
+  <text x="1560" y="720"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="600" fill="#8b7fd4" text-anchor="middle">Reward signal</text>
+
+  <!-- Model Improvement → Agent (left, updated model) -->
+  <path d="M 690 840 Q 400 880 270 600" stroke="#8b7fd4" stroke-width="3" fill="none" marker-end="url(#arrowHead)"/>
+  <text x="380" y="870"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="600" fill="#8b7fd4" text-anchor="middle">Updated policy</text>
+
+  <!-- ── Descriptions ── -->
+  <text x="270" y="640"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Chooses actions</text>
+  <text x="270" y="672"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">based on its policy</text>
+
+  <text x="960" y="494"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Reacts to actions;</text>
+  <text x="960" y="526"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">produces new state</text>
+
+  <text x="1650" y="640"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Evaluates outcome;</text>
+  <text x="1650" y="672"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">assigns reward or penalty</text>
+
+  <text x="960" y="930"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Reward updates model weights — agent gradually learns better strategies</text>
+</svg>

@@ -1,0 +1,77 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Why LLMs &#x201C;Hallucinate&#x201D;</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- Item 1 -->
+  <circle cx="92" cy="207" r="7" fill="#8b7fd4"/>
+  <text x="115" y="215"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="600" fill="#ffffff">LLMs predict tokens, they don&#x2019;t recall facts</text>
+  <text x="115" y="253"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">The model picks the statistically likely next token &#x2014; not the factually correct one</text>
+
+  <!-- Item 2 -->
+  <circle cx="92" cy="347" r="7" fill="#8b7fd4"/>
+  <text x="115" y="355"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="600" fill="#ffffff">Confidence without grounding</text>
+  <text x="115" y="393"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">There is no internal fact-checker &#x2014; the model cannot verify its own output</text>
+
+  <!-- Item 3 -->
+  <circle cx="92" cy="487" r="7" fill="#8b7fd4"/>
+  <text x="115" y="495"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="600" fill="#ffffff">Training data contains noise</text>
+  <text x="115" y="533"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">Outdated APIs, deprecated packages, and wrong Stack Overflow answers all get baked in</text>
+
+  <!-- Item 4 -->
+  <circle cx="92" cy="627" r="7" fill="#8b7fd4"/>
+  <text x="115" y="635"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="600" fill="#ffffff">The more specific, the riskier</text>
+  <text x="115" y="673"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">General patterns are well-learned; obscure APIs, niche libraries, and internal code are not</text>
+
+  <!-- Item 5 -->
+  <circle cx="92" cy="767" r="7" fill="#8b7fd4"/>
+  <text x="115" y="775"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="600" fill="#ffffff">The context window is the only truth</text>
+  <text x="115" y="813"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">Outside of what&#x2019;s in the prompt, the model fills the gap with learned patterns</text>
+
+  <!-- Item 6 -->
+  <circle cx="92" cy="907" r="7" fill="#8b7fd4"/>
+  <text x="115" y="915"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="600" fill="#ffffff">Hallucinations feel trustworthy</text>
+  <text x="115" y="953"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">The model repeats the same wrong answer confidently &#x2014; always review what it generates</text>
+
+</svg>

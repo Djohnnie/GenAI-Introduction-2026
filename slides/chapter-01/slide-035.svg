@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cardGlow1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Vectors — A 2D Illustration</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  2D COORDINATE DIAGRAM  (origin 180,440)  -->
+  <!-- ══════════════════════════════════════════ -->
+
+  <!-- Grid lines — faint dashed -->
+  <!-- vertical x=0.5 (280) and x=1.0 (380) -->
+  <line x1="280" y1="190" x2="280" y2="450" stroke="#8b7fd4" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="5,5"/>
+  <line x1="380" y1="190" x2="380" y2="450" stroke="#8b7fd4" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="5,5"/>
+  <!-- horizontal y=0.5 (340) and y=1.0 (240) -->
+  <line x1="100" y1="340" x2="530" y2="340" stroke="#8b7fd4" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="5,5"/>
+  <line x1="100" y1="240" x2="530" y2="240" stroke="#8b7fd4" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="5,5"/>
+
+  <!-- Unit circle (dashed) — r=200, center (180,440) -->
+  <circle cx="180" cy="440" r="200" fill="none" stroke="#8b7fd4" stroke-width="1" stroke-opacity="0.30" stroke-dasharray="6,4"/>
+
+  <!-- X-axis -->
+  <line x1="100" y1="440" x2="512" y2="440" stroke="#a89fd0" stroke-width="2"/>
+  <polygon points="512,432 524,440 512,448" fill="#a89fd0"/>
+  <!-- Y-axis -->
+  <line x1="180" y1="456" x2="180" y2="196" stroke="#a89fd0" stroke-width="2"/>
+  <polygon points="172,196 180,184 188,196" fill="#a89fd0"/>
+
+  <!-- Axis labels -->
+  <text x="535" y="445" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#a89fd0">x₁</text>
+  <text x="162" y="178" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#a89fd0">x₂</text>
+  <text x="165" y="460" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#a89fd0">0</text>
+
+  <!-- Tick marks and labels on x-axis -->
+  <line x1="280" y1="435" x2="280" y2="445" stroke="#a89fd0" stroke-width="1.5"/>
+  <text x="280" y="462" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#a89fd0" text-anchor="middle">0.5</text>
+  <line x1="380" y1="435" x2="380" y2="445" stroke="#a89fd0" stroke-width="1.5"/>
+  <text x="380" y="462" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#a89fd0" text-anchor="middle">1.0</text>
+
+  <!-- Tick marks and labels on y-axis -->
+  <line x1="175" y1="340" x2="185" y2="340" stroke="#a89fd0" stroke-width="1.5"/>
+  <text x="162" y="345" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#a89fd0" text-anchor="end">0.5</text>
+  <line x1="175" y1="240" x2="185" y2="240" stroke="#a89fd0" stroke-width="1.5"/>
+  <text x="162" y="245" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#a89fd0" text-anchor="end">1.0</text>
+
+  <!-- ─── Angle arc: cat ↔ kitten (≈12°, r=120) ─── -->
+  <!-- cat at r=120: (180+0.866×120, 440−0.5×120) = (284,380) -->
+  <!-- kitten at r=120: (180+0.743×120, 440−0.669×120) = (269,360) -->
+  <path d="M 284 380 A 120 120 0 0 0 269 360" fill="none" stroke="#c4baea" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="297" y="370" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#c4baea" text-anchor="middle">≈12°</text>
+
+  <!-- ─── Angle arc: cat ↔ mountain (≈45°, r=100) ─── -->
+  <!-- cat at r=100: (180+0.866×100, 440−0.5×100) = (267,390) -->
+  <!-- mountain at r=100: (180+0.259×100, 440−0.966×100) = (206,343) -->
+  <path d="M 267 390 A 100 100 0 0 0 206 343" fill="none" stroke="#a89fd0" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="248" y="376" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#a89fd0" text-anchor="middle">≈45°</text>
+
+  <!-- ─── Vector: "cat"  [0.87, 0.50]  angle 30°  tip (353,340) ─── -->
+  <!-- line ends 14px before tip: (353−0.866×14, 340+0.5×14) = (341,347) -->
+  <line x1="180" y1="440" x2="341" y2="347" stroke="#ffffff" stroke-width="3"/>
+  <polygon points="-12,-5 0,0 -12,5" fill="#ffffff" transform="translate(353, 340) rotate(-30)"/>
+  <text x="364" y="334" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">"cat"</text>
+  <text x="364" y="352" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#a89fd0">[0.87, 0.50]</text>
+
+  <!-- ─── Vector: "kitten"  [0.74, 0.67]  angle 42°  tip (329,306) ─── -->
+  <!-- line ends: (329−0.743×14, 306+0.669×14) = (319,315) -->
+  <line x1="180" y1="440" x2="319" y2="315" stroke="#8b7fd4" stroke-width="3"/>
+  <polygon points="-12,-5 0,0 -12,5" fill="#8b7fd4" transform="translate(329, 306) rotate(-42)"/>
+  <text x="335" y="300" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="700" fill="#8b7fd4">"kitten"</text>
+  <text x="335" y="317" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#a89fd0">[0.74, 0.67]</text>
+
+  <!-- ─── Vector: "mountain"  [0.26, 0.97]  angle 75°  tip (232,247) ─── -->
+  <!-- line ends: (232−0.259×14, 247+0.966×14) = (228,261) -->
+  <line x1="180" y1="440" x2="228" y2="261" stroke="#c4baea" stroke-width="2.5"/>
+  <polygon points="-12,-5 0,0 -12,5" fill="#c4baea" transform="translate(232, 247) rotate(-75)"/>
+  <text x="240" y="241" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="700" fill="#c4baea">"mountain"</text>
+  <text x="240" y="258" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#a89fd0">[0.26, 0.97]</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!--  RIGHT PANEL — comparison boxes                           -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <!-- Caption note -->
+  <text x="730" y="186" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="300" fill="#a89fd0">Real embeddings use 1 536 dimensions — simplified to 2D for illustration</text>
+
+  <!-- Comparison box 1: cat ↔ kitten -->
+  <rect x="730" y="200" width="1130" height="104" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="760" y="232" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">"cat"</text>
+  <text x="810" y="232" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="300" fill="#a89fd0">[0.87, 0.50]</text>
+  <text x="960" y="232" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#8b7fd4" text-anchor="middle">↔</text>
+  <text x="1000" y="232" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#8b7fd4">"kitten"</text>
+  <text x="1090" y="232" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="300" fill="#a89fd0">[0.74, 0.67]</text>
+  <rect x="760" y="244" width="1080" height="2" fill="#8b7fd4" fill-opacity="0.35"/>
+  <text x="760" y="278" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="300" fill="#c4baea">angle ≈ 12°   ·   cosine similarity = <tspan font-weight="700" fill="#ffffff">0.98</tspan>   →   <tspan fill="#8b7fd4" font-weight="600">SIMILAR ✓</tspan>   (nearly parallel vectors)</text>
+
+  <!-- Comparison box 2: cat ↔ mountain -->
+  <rect x="730" y="316" width="1130" height="104" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="760" y="348" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">"cat"</text>
+  <text x="810" y="348" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="300" fill="#a89fd0">[0.87, 0.50]</text>
+  <text x="960" y="348" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#a89fd0" text-anchor="middle">↔</text>
+  <text x="1000" y="348" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#c4baea">"mountain"</text>
+  <text x="1120" y="348" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="300" fill="#a89fd0">[0.26, 0.97]</text>
+  <rect x="760" y="360" width="1080" height="2" fill="#8b7fd4" fill-opacity="0.35"/>
+  <text x="760" y="394" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="300" fill="#c4baea">angle ≈ 45°   ·   cosine similarity = <tspan font-weight="700" fill="#ffffff">0.71</tspan>   →   <tspan fill="#a89fd0">DIFFERENT</tspan>   (vectors point different ways)</text>
+
+  <!-- ── Three cards ── -->
+
+  <!-- Card 1: Words Have Direction -->
+  <rect x="60" y="460" width="560" height="586" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="460" width="560" height="586" rx="16" fill="url(#cardGlow1)" fill-opacity="0.3"/>
+
+  <text x="340" y="526" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="44" fill="#8b7fd4" text-anchor="middle">🐱</text>
+  <text x="340" y="584" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Words Have Direction</text>
+  <rect x="120" y="602" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="340" y="648" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Each word maps to a point in space</text>
+  <text x="340" y="692" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Similar meaning → similar direction</text>
+  <text x="340" y="736" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">The model learned this from context</text>
+  <text x="340" y="780" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Billions of sentences — no manual rules</text>
+  <text x="340" y="840" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">"cat" and "kitten" appear in</text>
+  <text x="340" y="874" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">similar contexts → nearby vectors</text>
+
+  <!-- Card 2: Cosine Similarity -->
+  <rect x="680" y="460" width="560" height="586" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="460" width="560" height="586" rx="16" fill="url(#cardGlow2)" fill-opacity="0.3"/>
+
+  <text x="960" y="526" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="44" fill="#8b7fd4" text-anchor="middle">📐</text>
+  <text x="960" y="584" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Cosine Similarity</text>
+  <rect x="740" y="602" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="960" y="648" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Measures the angle between vectors</text>
+  <text x="960" y="692" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">1.0 = same direction (identical)</text>
+  <text x="960" y="736" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">0.0 = perpendicular (unrelated)</text>
+  <text x="960" y="780" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Length does not matter — only angle</text>
+  <text x="960" y="840" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Typical "similar" threshold:</text>
+  <text x="960" y="874" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">cosine similarity above 0.85</text>
+
+  <!-- Card 3: Why 2D? -->
+  <rect x="1300" y="460" width="560" height="586" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="1300" y="460" width="560" height="586" rx="16" fill="url(#cardGlow3)" fill-opacity="0.3"/>
+
+  <text x="1580" y="526" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="44" fill="#8b7fd4" text-anchor="middle">📏</text>
+  <text x="1580" y="584" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Why Only 2D Here?</text>
+  <rect x="1360" y="602" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="1580" y="648" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Real embeddings: 1 536 dimensions</text>
+  <text x="1580" y="692" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Impossible to draw — maths is the same</text>
+  <text x="1580" y="736" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Cosine similarity works in any dimension</text>
+  <text x="1580" y="780" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">More dimensions → richer representation</text>
+  <text x="1580" y="840" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">1 536 dims expresses subtle nuance:</text>
+  <text x="1580" y="874" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">tone, domain, formality, style</text>
+</svg>

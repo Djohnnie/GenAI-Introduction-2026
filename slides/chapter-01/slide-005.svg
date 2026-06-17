@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cardGlow1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow4" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow5" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Features, Labels &amp; Learning Tasks</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- ── Top row: Features and Labels ── -->
+
+  <!-- Features card -->
+  <rect x="60" y="168" width="880" height="320" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="168" width="880" height="320" rx="16" fill="url(#cardGlow1)" fill-opacity="0.3"/>
+
+  <text x="500" y="238"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">📊</text>
+  <text x="500" y="300"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Features</text>
+  <text x="500" y="346"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">The measurable input variables for each data point</text>
+  <text x="500" y="386"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">that the model uses to make its prediction</text>
+  <rect x="120" y="408" width="760" height="2" fill="#8b7fd4" fill-opacity="0.4"/>
+  <text x="500" y="448"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#a89fd0" text-anchor="middle">e.g. age, income, temperature, pixel values, token embeddings</text>
+
+  <!-- Labels card -->
+  <rect x="980" y="168" width="880" height="320" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="980" y="168" width="880" height="320" rx="16" fill="url(#cardGlow2)" fill-opacity="0.3"/>
+
+  <text x="1420" y="238"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">🏷️</text>
+  <text x="1420" y="300"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Labels</text>
+  <text x="1420" y="346"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">The target output the model learns to predict —</text>
+  <text x="1420" y="386"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">the "correct answers" in the training data</text>
+  <rect x="1040" y="408" width="760" height="2" fill="#8b7fd4" fill-opacity="0.4"/>
+  <text x="1420" y="448"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#a89fd0" text-anchor="middle">Only in supervised learning — clustering has no labels</text>
+
+  <!-- ── Bottom row: three learning task types ── -->
+
+  <!-- Regression card -->
+  <rect x="60" y="520" width="560" height="520" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="520" width="560" height="520" rx="16" fill="url(#cardGlow3)" fill-opacity="0.3"/>
+
+  <text x="340" y="596"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">📈</text>
+  <text x="340" y="658"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Regression</text>
+  <rect x="120" y="678" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="340" y="724"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Predict a continuous</text>
+  <text x="340" y="764"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">numeric value</text>
+  <text x="340" y="836"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">Examples</text>
+  <text x="340" y="878"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">House price prediction</text>
+  <text x="340" y="918"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Temperature forecast</text>
+  <text x="340" y="958"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Sales projection</text>
+  <text x="340" y="1010"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#8b7fd4" text-anchor="middle">Label type: number</text>
+
+  <!-- Classification card -->
+  <rect x="680" y="520" width="560" height="520" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="520" width="560" height="520" rx="16" fill="url(#cardGlow4)" fill-opacity="0.3"/>
+
+  <text x="960" y="596"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">🗂️</text>
+  <text x="960" y="658"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Classification</text>
+  <rect x="740" y="678" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="960" y="724"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Predict a discrete category</text>
+  <text x="960" y="764"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">from a fixed set</text>
+  <text x="960" y="836"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">Examples</text>
+  <text x="960" y="878"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Spam / not spam</text>
+  <text x="960" y="918"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Handwritten digit 0–9</text>
+  <text x="960" y="958"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Sentiment pos / neg / neu</text>
+  <text x="960" y="1010"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#8b7fd4" text-anchor="middle">Label type: category</text>
+
+  <!-- Clustering card -->
+  <rect x="1300" y="520" width="560" height="520" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="1300" y="520" width="560" height="520" rx="16" fill="url(#cardGlow5)" fill-opacity="0.3"/>
+
+  <text x="1580" y="596"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">🔵</text>
+  <text x="1580" y="658"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Clustering</text>
+  <rect x="1360" y="678" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="1580" y="724"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Group data points by</text>
+  <text x="1580" y="764"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">similarity — no labels</text>
+  <text x="1580" y="836"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">Examples</text>
+  <text x="1580" y="878"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Customer segmentation</text>
+  <text x="1580" y="918"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Document topic groups</text>
+  <text x="1580" y="958"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Anomaly detection</text>
+  <text x="1580" y="1010"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#8b7fd4" text-anchor="middle">Label type: none (unsupervised)</text>
+</svg>

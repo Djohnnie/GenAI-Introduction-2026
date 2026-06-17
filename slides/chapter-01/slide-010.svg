@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="tempGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#4a9eff"/>
+      <stop offset="28%"  stop-color="#4a9eff"/>
+      <stop offset="32%"  stop-color="#8b7fd4"/>
+      <stop offset="68%"  stop-color="#8b7fd4"/>
+      <stop offset="72%"  stop-color="#ff8c42"/>
+      <stop offset="100%" stop-color="#ff8c42"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">LLM Temperature — Choosing the Right Setting</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- Temperature spectrum bar -->
+  <rect x="60" y="160" width="1800" height="38" rx="8" fill="url(#tempGrad)"/>
+
+  <!-- Tick marks and labels -->
+  <line x1="60"   y1="198" x2="60"   y2="220" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+  <line x1="600"  y1="198" x2="600"  y2="220" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+  <line x1="1320" y1="198" x2="1320" y2="220" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+  <line x1="1860" y1="198" x2="1860" y2="220" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+
+  <text x="60"   y="244" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#ffffff" fill-opacity="0.6" text-anchor="middle">0.0</text>
+  <text x="600"  y="244" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#ffffff" fill-opacity="0.6" text-anchor="middle">0.3</text>
+  <text x="1320" y="244" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#ffffff" fill-opacity="0.6" text-anchor="middle">0.7</text>
+  <text x="1860" y="244" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#ffffff" fill-opacity="0.6" text-anchor="middle">1.0+</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- Card 1 — Factual & Analytical (0.0 – 0.3)                 -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <rect x="60" y="264" width="560" height="776" rx="16" fill="#ffffff" fill-opacity="0.07" stroke="#4a9eff" stroke-width="1.5"/>
+  <rect x="60" y="264" width="560" height="8"   rx="8"  fill="#4a9eff"/>
+
+  <text x="340" y="340"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="52" font-weight="800" fill="#4a9eff" text-anchor="middle" letter-spacing="-1">0.0 – 0.3</text>
+  <text x="340" y="386"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">Factual &amp; Analytical</text>
+
+  <rect x="110" y="410" width="460" height="2" fill="#4a9eff" fill-opacity="0.35"/>
+
+  <text x="340" y="448"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="600" fill="#4a9eff" text-anchor="middle" letter-spacing="1">BEST FOR</text>
+  <text x="340" y="487"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Coding &amp; data extraction</text>
+  <text x="340" y="522"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Math &amp; technical documentation</text>
+  <text x="340" y="557"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Customer support</text>
+
+  <rect x="110" y="582" width="460" height="2" fill="#4a9eff" fill-opacity="0.35"/>
+
+  <text x="340" y="620"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="600" fill="#4a9eff" text-anchor="middle" letter-spacing="1">RESULT</text>
+  <text x="340" y="659"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Consistent and deterministic output.</text>
+  <text x="340" y="694"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Still a next-word predictor — always verify.</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- Card 2 — Standard Conversational (0.3 – 0.7)              -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <rect x="680" y="264" width="560" height="776" rx="16" fill="#ffffff" fill-opacity="0.07" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="264" width="560" height="8"   rx="8"  fill="#8b7fd4"/>
+
+  <text x="960" y="340"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="52" font-weight="800" fill="#8b7fd4" text-anchor="middle" letter-spacing="-1">0.3 – 0.7</text>
+  <text x="960" y="386"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">Standard Conversational</text>
+
+  <rect x="730" y="410" width="460" height="2" fill="#8b7fd4" fill-opacity="0.35"/>
+
+  <text x="960" y="448"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="600" fill="#8b7fd4" text-anchor="middle" letter-spacing="1">BEST FOR</text>
+  <text x="960" y="487"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">General chat &amp; summarization</text>
+  <text x="960" y="522"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Translations</text>
+  <text x="960" y="557"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Business writing</text>
+
+  <rect x="730" y="582" width="460" height="2" fill="#8b7fd4" fill-opacity="0.35"/>
+
+  <text x="960" y="620"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="600" fill="#8b7fd4" text-anchor="middle" letter-spacing="1">RESULT</text>
+  <text x="960" y="659"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Natural, coherent, and helpful.</text>
+  <text x="960" y="694"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Avoids erratic outputs.</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- Card 3 — Creative (0.7 – 1.0+)                            -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <rect x="1300" y="264" width="560" height="776" rx="16" fill="#ffffff" fill-opacity="0.07" stroke="#ff8c42" stroke-width="1.5"/>
+  <rect x="1300" y="264" width="560" height="8"   rx="8"  fill="#ff8c42"/>
+
+  <text x="1580" y="340"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="52" font-weight="800" fill="#ff8c42" text-anchor="middle" letter-spacing="-1">0.7 – 1.0+</text>
+  <text x="1580" y="386"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">Creative</text>
+
+  <rect x="1350" y="410" width="460" height="2" fill="#ff8c42" fill-opacity="0.35"/>
+
+  <text x="1580" y="448"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="600" fill="#ff8c42" text-anchor="middle" letter-spacing="1">BEST FOR</text>
+  <text x="1580" y="487"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Brainstorming &amp; ideation</text>
+  <text x="1580" y="522"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Creative writing &amp; poetry</text>
+
+  <rect x="1350" y="552" width="460" height="2" fill="#ff8c42" fill-opacity="0.35"/>
+
+  <text x="1580" y="590"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="600" fill="#ff8c42" text-anchor="middle" letter-spacing="1">RESULT</text>
+  <text x="1580" y="629"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="27" font-weight="300" fill="#c4baea" text-anchor="middle">Diverse, imaginative, and varied.</text>
+
+  <rect x="1350" y="658" width="460" height="2" fill="#ff8c42" fill-opacity="0.35"/>
+
+  <!-- Warning box -->
+  <rect x="1330" y="674" width="500" height="120" rx="12" fill="#ff8c42" fill-opacity="0.1" stroke="#ff8c42" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="1580" y="716"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="700" fill="#ff8c42" text-anchor="middle">⚠  Past 1.0</text>
+  <text x="1580" y="752"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#c4baea" text-anchor="middle">May produce gibberish or loss of context.</text>
+</svg>

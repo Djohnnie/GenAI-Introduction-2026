@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cardGlow1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Multi-Modal LLMs</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- ── Diagram ── -->
+
+  <!-- Input box: Text -->
+  <rect x="80" y="192" width="280" height="76" rx="12" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="116" y="236"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" fill="#8b7fd4" text-anchor="middle">💬</text>
+  <text x="148" y="234"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">Text</text>
+  <text x="220" y="256"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="17" font-weight="300" fill="#a89fd0" text-anchor="middle">questions &amp; instructions</text>
+
+  <!-- Input box: Images -->
+  <rect x="80" y="284" width="280" height="76" rx="12" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="116" y="328"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" fill="#8b7fd4" text-anchor="middle">🖼️</text>
+  <text x="148" y="326"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">Images</text>
+  <text x="220" y="348"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="17" font-weight="300" fill="#a89fd0" text-anchor="middle">photos, docs, screenshots</text>
+
+  <!-- Input box: Audio -->
+  <rect x="80" y="376" width="280" height="76" rx="12" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="116" y="420"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" fill="#8b7fd4" text-anchor="middle">🎵</text>
+  <text x="148" y="418"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">Audio</text>
+  <text x="220" y="440"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="17" font-weight="300" fill="#a89fd0" text-anchor="middle">speech &amp; recordings</text>
+
+  <!-- Arrows: inputs → LLM (all entering LLM box left edge at x=540) -->
+  <line x1="360" y1="230" x2="528" y2="230" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="528,218 550,230 528,242" fill="#8b7fd4"/>
+
+  <line x1="360" y1="322" x2="528" y2="322" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="528,310 550,322 528,334" fill="#8b7fd4"/>
+
+  <line x1="360" y1="414" x2="528" y2="414" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="528,402 550,414 528,426" fill="#8b7fd4"/>
+
+  <!-- LLM box (center y=322) -->
+  <rect x="550" y="162" width="300" height="320" rx="16" fill="#ffffff" fill-opacity="0.10" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="700" y="244"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="52" fill="#8b7fd4" text-anchor="middle">🧠</text>
+  <text x="700" y="302"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Multi-Modal</text>
+  <text x="700" y="338"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">LLM</text>
+  <rect x="590" y="354" width="220" height="2" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="700" y="386"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0" text-anchor="middle">all modalities in</text>
+  <text x="700" y="410"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0" text-anchor="middle">one context window</text>
+  <text x="700" y="452"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="18" font-weight="300" fill="#a89fd0" text-anchor="middle">GPT-4o · Gemini · Claude</text>
+
+  <!-- Arrow: LLM → Response -->
+  <line x1="850" y1="322" x2="958" y2="322" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="958,310 980,322 958,334" fill="#8b7fd4"/>
+
+  <!-- Response box -->
+  <rect x="980" y="192" width="880" height="300" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="1420" y="238"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" fill="#8b7fd4" text-anchor="middle">✅</text>
+  <text x="1420" y="278"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Rich Text Response</text>
+  <rect x="1060" y="294" width="720" height="2" fill="#8b7fd4" fill-opacity="0.4"/>
+  <text x="1420" y="330"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#c4baea" text-anchor="middle">Describes images and visual content</text>
+  <text x="1420" y="366"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#c4baea" text-anchor="middle">Transcribes and translates speech</text>
+  <text x="1420" y="402"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#c4baea" text-anchor="middle">Reads text from documents and charts</text>
+  <text x="1420" y="464"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0" text-anchor="middle">The model reasons — modality is just the input format</text>
+
+  <!-- ── Three cards ── -->
+
+  <!-- Card 1: Vision -->
+  <rect x="60" y="516" width="560" height="532" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="516" width="560" height="532" rx="16" fill="url(#cardGlow1)" fill-opacity="0.3"/>
+
+  <text x="340" y="582"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🖼️</text>
+  <text x="340" y="638"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Vision</text>
+  <rect x="120" y="656" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="340" y="700"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Describe photos and scenes</text>
+  <text x="340" y="744"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Read text from images and PDFs</text>
+  <text x="340" y="788"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Interpret charts and diagrams</text>
+  <text x="340" y="832"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Analyse screenshots and mockups</text>
+  <text x="340" y="892"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#a89fd0" text-anchor="middle">UriContent (URL) or</text>
+  <text x="340" y="922"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#a89fd0" text-anchor="middle">DataContent (raw bytes)</text>
+
+  <!-- Card 2: Audio -->
+  <rect x="680" y="516" width="560" height="532" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="516" width="560" height="532" rx="16" fill="url(#cardGlow2)" fill-opacity="0.3"/>
+
+  <text x="960" y="582"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🎵</text>
+  <text x="960" y="638"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Audio</text>
+  <rect x="740" y="656" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="960" y="700"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Transcribe speech to text</text>
+  <text x="960" y="744"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Translate audio to English</text>
+  <text x="960" y="788"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Process recordings and meetings</text>
+  <text x="960" y="832"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Build multilingual pipelines</text>
+  <text x="960" y="892"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#a89fd0" text-anchor="middle">Whisper model via</text>
+  <text x="960" y="922"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#a89fd0" text-anchor="middle">GetAudioClient("whisper")</text>
+
+  <!-- Card 3: What Opens Up -->
+  <rect x="1300" y="516" width="560" height="532" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="1300" y="516" width="560" height="532" rx="16" fill="url(#cardGlow3)" fill-opacity="0.3"/>
+
+  <text x="1580" y="582"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🌐</text>
+  <text x="1580" y="638"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">What Opens Up</text>
+  <rect x="1360" y="656" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="1580" y="700"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Handle real-world inputs directly</text>
+  <text x="1580" y="744"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">No separate preprocessing step</text>
+  <text x="1580" y="788"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Mix text and images in one request</text>
+  <text x="1580" y="832"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Same LLM reasons over everything</text>
+  <text x="1580" y="892"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#a89fd0" text-anchor="middle">Same IChatClient abstraction —</text>
+  <text x="1580" y="922"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#a89fd0" text-anchor="middle">modality is just the content type</text>
+</svg>

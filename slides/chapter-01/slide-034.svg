@@ -1,0 +1,284 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cardGlow1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Embeddings and Vector Search</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- ── Diagram ── -->
+
+  <!-- ① Index label -->
+  <text x="80" y="183"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="18" font-weight="600" fill="#8b7fd4">① Index</text>
+
+  <!-- ② Query label -->
+  <text x="80" y="287"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="18" font-weight="600" fill="#8b7fd4">② Query</text>
+
+  <!-- Row 1: Index boxes (center y=222) -->
+
+  <!-- Box: Docs -->
+  <rect x="80" y="188" width="200" height="68" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="180" y="219"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">📄 Docs</text>
+  <text x="180" y="245"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16" font-weight="300" fill="#a89fd0" text-anchor="middle">text · PDFs · records</text>
+
+  <!-- Arrow: Docs → ada-002 (row 1) -->
+  <line x1="280" y1="222" x2="338" y2="222" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="338,210 350,222 338,234" fill="#8b7fd4"/>
+
+  <!-- Box: ada-002 (row 1) -->
+  <rect x="350" y="188" width="230" height="68" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="465" y="219"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">🔢 ada-002</text>
+  <text x="465" y="245"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16" font-weight="300" fill="#a89fd0" text-anchor="middle">Embedding Model</text>
+
+  <!-- Arrow: ada-002 → vector (row 1) -->
+  <line x1="580" y1="222" x2="638" y2="222" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="638,210 650,222 638,234" fill="#8b7fd4"/>
+
+  <!-- Box: float vector (row 1) -->
+  <rect x="650" y="188" width="340" height="68" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="820" y="219"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">[0.12, −0.84, 0.33, 0.71, ...]</text>
+  <text x="820" y="245"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16" font-weight="300" fill="#a89fd0" text-anchor="middle">1 536-dimensional float vector</text>
+
+  <!-- Arrow: vector → Vector Store (row 1, stores) -->
+  <line x1="990" y1="222" x2="1128" y2="222" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="1128,210 1140,222 1128,234" fill="#8b7fd4"/>
+
+  <!-- Row 2: Query boxes (center y=326) -->
+
+  <!-- Box: Query -->
+  <rect x="80" y="292" width="200" height="68" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="180" y="323"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">❓ Query</text>
+  <text x="180" y="349"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16" font-weight="300" fill="#a89fd0" text-anchor="middle">user's search text</text>
+
+  <!-- Arrow: Query → ada-002 (row 2) -->
+  <line x1="280" y1="326" x2="338" y2="326" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="338,314 350,326 338,338" fill="#8b7fd4"/>
+
+  <!-- Box: ada-002 (row 2) -->
+  <rect x="350" y="292" width="230" height="68" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="465" y="323"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">🔢 ada-002</text>
+  <text x="465" y="349"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16" font-weight="300" fill="#a89fd0" text-anchor="middle">Embedding Model</text>
+
+  <!-- Arrow: ada-002 → vector (row 2) -->
+  <line x1="580" y1="326" x2="638" y2="326" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="638,314 650,326 638,338" fill="#8b7fd4"/>
+
+  <!-- Box: query vector (row 2) -->
+  <rect x="650" y="292" width="340" height="68" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="820" y="323"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">[0.15, −0.81, 0.29, 0.68, ...]</text>
+  <text x="820" y="349"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16" font-weight="300" fill="#a89fd0" text-anchor="middle">1 536-dimensional query vector</text>
+
+  <!-- Arrow: vector → Vector Store (row 2, searches) -->
+  <line x1="990" y1="326" x2="1128" y2="326" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="1128,314 1140,326 1128,338" fill="#8b7fd4"/>
+  <text x="1059" y="317"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="15" font-weight="300" fill="#a89fd0" text-anchor="middle">cosine sim</text>
+
+  <!-- Vector Store box (spans both rows) -->
+  <rect x="1140" y="168" width="520" height="240" rx="14" fill="#ffffff" fill-opacity="0.10" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="1400" y="204"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Vector Store</text>
+  <text x="1400" y="228"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="17" font-weight="300" fill="#a89fd0" text-anchor="middle">SQL Server vector(1536)</text>
+  <rect x="1180" y="236" width="440" height="2" fill="#8b7fd4" fill-opacity="0.4"/>
+  <text x="1180" y="262"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16" font-weight="300" fill="#c4baea">[ 0.12, −0.84, 0.33, ...]  "John"</text>
+  <text x="1180" y="286"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16" font-weight="300" fill="#c4baea">[ 0.15, −0.81, 0.29, ...]  "Jon"</text>
+  <text x="1180" y="310"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16" font-weight="300" fill="#c4baea">[ 0.89,  0.14, −0.62, ...]  "Alice"</text>
+  <text x="1180" y="334"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16" font-weight="300" fill="#c4baea">[ −0.21, 0.77,  0.45, ...]  "Bob"</text>
+  <rect x="1180" y="350" width="440" height="2" fill="#8b7fd4" fill-opacity="0.4"/>
+  <text x="1400" y="390"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="17" font-weight="600" fill="#8b7fd4" text-anchor="middle">cosine similarity search → Top-K</text>
+
+  <!-- Arrow: Vector Store → Results -->
+  <line x1="1660" y1="288" x2="1678" y2="288" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="1678,276 1690,288 1678,300" fill="#8b7fd4"/>
+
+  <!-- Results box -->
+  <rect x="1690" y="188" width="170" height="220" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="1775" y="216"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">🎯 Top-K</text>
+  <rect x="1710" y="224" width="130" height="2" fill="#8b7fd4" fill-opacity="0.4"/>
+  <text x="1775" y="250"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="15" font-weight="300" fill="#c4baea" text-anchor="middle">John   0.97</text>
+  <text x="1775" y="274"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="15" font-weight="300" fill="#c4baea" text-anchor="middle">Jon    0.94</text>
+  <text x="1775" y="298"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="15" font-weight="300" fill="#c4baea" text-anchor="middle">Johan  0.91</text>
+  <text x="1775" y="322"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="15" font-weight="300" fill="#c4baea" text-anchor="middle">Jhon   0.88</text>
+  <text x="1775" y="346"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="15" font-weight="300" fill="#c4baea" text-anchor="middle">Jonne  0.85</text>
+  <text x="1775" y="390"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="13" font-weight="300" fill="#a89fd0" text-anchor="middle">by cosine distance</text>
+
+  <!-- Key insight bar -->
+  <rect x="60" y="422" width="1800" height="44" rx="8" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="960" y="449"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="21" font-weight="300" fill="#c4baea" text-anchor="middle">Similar meaning → similar vectors → small cosine distance → surfaces as relevant results</text>
+
+  <!-- ── Three cards ── -->
+
+  <!-- Card 1: What Is an Embedding? -->
+  <rect x="60" y="478" width="560" height="570" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="478" width="560" height="570" rx="16" fill="url(#cardGlow1)" fill-opacity="0.3"/>
+
+  <text x="340" y="544"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🔢</text>
+  <text x="340" y="602"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">What Is an Embedding?</text>
+  <rect x="120" y="620" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="340" y="664"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">A dense float vector encoding meaning</text>
+  <text x="340" y="708"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Produced by a trained language model</text>
+  <text x="340" y="752"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Similar meaning → nearby in space</text>
+  <text x="340" y="796"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">ada-002 produces 1 536 dimensions</text>
+  <text x="340" y="856"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">"cat" and "feline" land closer</text>
+  <text x="340" y="890"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">together than "cat" and "cloud"</text>
+
+  <!-- Card 2: How Vector Search Works -->
+  <rect x="680" y="478" width="560" height="570" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="478" width="560" height="570" rx="16" fill="url(#cardGlow2)" fill-opacity="0.3"/>
+
+  <text x="960" y="544"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🔍</text>
+  <text x="960" y="602"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">How Vector Search Works</text>
+  <rect x="740" y="620" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="960" y="664"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Embed the query at search time</text>
+  <text x="960" y="708"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Cosine similarity: 1.0 = identical</text>
+  <text x="960" y="752"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Rank stored vectors by closeness</text>
+  <text x="960" y="796"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Return the top-K nearest matches</text>
+  <text x="960" y="856"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">EF.Functions.VectorDistance(</text>
+  <text x="960" y="890"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">"cosine", ...) in EF Core</text>
+
+  <!-- Card 3: Use Cases -->
+  <rect x="1300" y="478" width="560" height="570" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="1300" y="478" width="560" height="570" rx="16" fill="url(#cardGlow3)" fill-opacity="0.3"/>
+
+  <text x="1580" y="544"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🎯</text>
+  <text x="1580" y="602"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Use Cases</text>
+  <rect x="1360" y="620" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="1580" y="664"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Semantic search across documents</text>
+  <text x="1580" y="708"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">RAG — retrieve relevant chunks</text>
+  <text x="1580" y="752"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Recommendation engines</text>
+  <text x="1580" y="796"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Deduplication and clustering</text>
+  <text x="1580" y="856"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Finds "automobile" when you</text>
+  <text x="1580" y="890"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">searched for "car"</text>
+</svg>

@@ -1,0 +1,74 @@
+<Solution>
+  <Folder Name="/00. Common/">
+    <Project Path="src/AgentFramework.Common/AgentFramework.Common.csproj" />
+  </Folder>
+  <Folder Name="/01. Token Visualizer/">
+    <Project Path="src/TokenVisualizer/TokenVisualizer.csproj" />
+  </Folder>
+  <Folder Name="/02. Agent Framework Chat/">
+    <Project Path="src/AgentFramework.Chat/AgentFramework.Chat.csproj" />
+  </Folder>
+  <Folder Name="/03. Agent Framework Chat History/">
+    <Project Path="src/AgentFramework.ChatHistory/AgentFramework.ChatHistory.csproj" />
+  </Folder>
+  <Folder Name="/04. Agent Framework Chat History with Persona/">
+    <Project Path="src/AgentFramework.ChatPersona/AgentFramework.ChatPersona.csproj" />
+  </Folder>
+  <Folder Name="/05. Agent Framework Plugins and Functions/">
+    <Project Path="src/AgentFramework.PluginsAndFunctions/AgentFramework.PluginsAndFunctions.csproj" />
+  </Folder>
+  <Folder Name="/06. Agent Framework with Structured Output/">
+    <Project Path="src/AgentFramework.StructuredOutput/AgentFramework.StructuredOutput.csproj" Id="9c0f72cc-a01e-4039-a0a8-5225ec6b614b" />
+  </Folder>
+  <Folder Name="/07. Agent Framework using Azure OpenAI/">
+    <Project Path="src/AgentFramework.AzureOpenAiAgent/AgentFramework.AzureOpenAiAgent.csproj" />
+  </Folder>
+  <Folder Name="/08. Agent Framework using Ollama/">
+    <Project Path="src/AgentFramework.OllamaAgent/AgentFramework.OllamaAgent.csproj" />
+  </Folder>
+  <Folder Name="/09. Agent Framework using Foundry Agent/">
+    <Project Path="src/AgentFramework.FoundryAgent/AgentFramework.FoundryAgent.csproj" Id="9aaace9a-c20c-45a0-95f2-6b0d0d3bae4a" />
+  </Folder>
+  <Folder Name="/10. Agent Framework with multimodal models/">
+    <Project Path="src/AgentFramework.MultiModal.Audio/AgentFramework.MultiModal.Audio.csproj" Id="e384abd9-e120-4ccc-81c6-9a6f332a1e76" />
+    <Project Path="src/AgentFramework.MultiModal.Images/AgentFramework.MultiModal.Images.csproj" Id="b0b45d1c-e6d7-448b-bacc-2f6165690f7c" />
+  </Folder>
+  <Folder Name="/11. Agent Framework MCP Client/">
+    <Project Path="src/AgentFramework.AgentUsingGitHubMcpServer/AgentFramework.AgentUsingGitHubMcpServer.csproj" />
+    <Project Path="src/AgentFramework.AgentUsingGoogleMapsMcpServer/AgentFramework.AgentUsingGoogleMapsMcpServer.csproj" />
+  </Folder>
+  <Folder Name="/12. MCP Server-Client/">
+    <Project Path="src/AgentFramework.McpClient/AgentFramework.McpClient.csproj" />
+    <Project Path="src/AgentFramework.McpServer/AgentFramework.McpServer.csproj" />
+    <Project Path="src/AgentFramework.McpSseClient/AgentFramework.McpSseClient.csproj" />
+    <Project Path="src/AgentFramework.McpSseServer/AgentFramework.McpSseServer.csproj" />
+  </Folder>
+  <Folder Name="/13. Agent Framework with Embeddings/">
+    <Project Path="src/AgentFramework.Embeddings/AgentFramework.Embeddings.csproj" Id="33ece6df-52d4-4c15-8721-cdf63d22e987" />
+  </Folder>
+  <Folder Name="/14. Agent Framework with custom multi-agent management/">
+    <Project Path="src/MijnCopilot/MijnCopilot.Agents/MijnCopilot.Agents.csproj" />
+    <Project Path="src/MijnCopilot/MijnCopilot.Application/MijnCopilot.Application.csproj" />
+    <Project Path="src/MijnCopilot/MijnCopilot.Contracts/MijnCopilot.Contracts.csproj" />
+    <Project Path="src/MijnCopilot/MijnCopilot.DataAccess/MijnCopilot.DataAccess.csproj" />
+    <Project Path="src/MijnCopilot/MijnCopilot.Model/MijnCopilot.Model.csproj" />
+    <Project Path="src/MijnCopilot/MijnCopilot.Web/MijnCopilot.Web.csproj" />
+  </Folder>
+  <Folder Name="/15. Agent Framework with custom multi-agent management in Orleans/">
+    <Project Path="src/MijnCopilot.Orleans/MijnCopilot.Agents/MijnCopilot.Agents.csproj" />
+    <Project Path="src/MijnCopilot.Orleans/MijnCopilot.Application/MijnCopilot.Application.csproj" />
+    <Project Path="src/MijnCopilot.Orleans/MijnCopilot.Contracts/MijnCopilot.Contracts.csproj" />
+    <Project Path="src/MijnCopilot.Orleans/MijnCopilot.Model/MijnCopilot.Model.csproj" />
+    <Project Path="src/MijnCopilot.Orleans/MijnCopilot.Orleans.Host/MijnCopilot.Orleans.Host.csproj" />
+    <Project Path="src/MijnCopilot.Orleans/MijnCopilot.Web/MijnCopilot.Web.csproj" />
+  </Folder>
+  <Folder Name="/16. Agent Framework with workflow/">
+    <Project Path="src/AgentFramework.Workflows/AgentFramework.Workflows.csproj" Id="13fdf4fa-e129-409f-88ee-4e6fb8919871" />
+  </Folder>
+  <Folder Name="/17. Document Intelligence/">
+    <Project Path="src/DocumentIntelligence.Poc/DocumentIntelligence.Poc.csproj" />
+  </Folder>
+  <Folder Name="/18. Content Understanding/">
+    <Project Path="src/ContentUnderstanding.Poc/ContentUnderstanding.Poc.csproj" />
+  </Folder>
+</Solution>

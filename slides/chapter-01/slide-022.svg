@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Demo 05 &#x2014; Plugins and Functions</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- Overview text -->
+  <text x="80" y="195"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="300" fill="#c4baea">
+    Give the agent real-world capabilities &#x2014; tools let it call your code on demand.
+  </text>
+
+  <!-- ===== BOX 1: Define Tools (top-left) ===== -->
+  <rect x="80" y="235" width="860" height="367" rx="12"
+    fill="#ffffff" fill-opacity="0.07" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="510" y="325" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="56" font-weight="700" fill="#8b7fd4">01</text>
+  <text x="510" y="400" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="38" font-weight="600" fill="#ffffff">Define Tools</text>
+  <rect x="400" y="420" width="220" height="3" fill="#8b7fd4"/>
+  <text x="510" y="466" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">Wrap static methods with AIFunctionFactory</text>
+  <text x="510" y="510" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">and [Description] attributes guide the model</text>
+
+  <!-- ===== BOX 2: Register (top-right) ===== -->
+  <rect x="980" y="235" width="860" height="367" rx="12"
+    fill="#ffffff" fill-opacity="0.07" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="1410" y="325" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="56" font-weight="700" fill="#8b7fd4">02</text>
+  <text x="1410" y="400" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="38" font-weight="600" fill="#ffffff">Register</text>
+  <rect x="1330" y="420" width="160" height="3" fill="#8b7fd4"/>
+  <text x="1410" y="466" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">Pass the tool list to AsAIAgent(tools:)</text>
+  <text x="1410" y="510" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">so the agent knows what it can invoke</text>
+
+  <!-- ===== BOX 3: Run (bottom-left) ===== -->
+  <rect x="80" y="632" width="860" height="367" rx="12"
+    fill="#ffffff" fill-opacity="0.07" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="510" y="722" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="56" font-weight="700" fill="#8b7fd4">03</text>
+  <text x="510" y="797" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="38" font-weight="600" fill="#ffffff">Run</text>
+  <rect x="430" y="817" width="160" height="3" fill="#8b7fd4"/>
+  <text x="510" y="863" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">Call RunAsync() &#x2014; the agent decides</text>
+  <text x="510" y="907" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">when and which tools to invoke</text>
+
+  <!-- ===== BOX 4: Observe (bottom-right) ===== -->
+  <rect x="980" y="632" width="860" height="367" rx="12"
+    fill="#ffffff" fill-opacity="0.07" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="1410" y="722" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="56" font-weight="700" fill="#8b7fd4">04</text>
+  <text x="1410" y="797" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="38" font-weight="600" fill="#ffffff">Observe</text>
+  <rect x="1330" y="817" width="160" height="3" fill="#8b7fd4"/>
+  <text x="1410" y="863" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">Debug() reveals the tool call and result</text>
+  <text x="1410" y="907" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea">messages added to the session history</text>
+
+</svg>

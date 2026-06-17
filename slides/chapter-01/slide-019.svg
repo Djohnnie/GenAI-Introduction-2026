@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cardGlow1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Shaping Behaviour with System Prompts</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- ── Request structure diagram ── -->
+
+  <!-- Bracket label -->
+  <text x="80" y="196"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#8b7fd4">Every request contains:</text>
+
+  <!-- Layer 1: System Prompt -->
+  <rect x="80" y="212" width="860" height="68" rx="10" fill="#8b7fd4" fill-opacity="0.30" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="100" y="242"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="700" fill="#ffffff">SYSTEM PROMPT</text>
+  <text x="100" y="268"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#c4baea">"You are a helpful assistant for Contoso. Only answer questions about our products. Be concise and friendly."</text>
+
+  <!-- Layer 2: History -->
+  <rect x="80" y="286" width="860" height="68" rx="10" fill="#ffffff" fill-opacity="0.07" stroke="#8b7fd4" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="100" y="316"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="700" fill="#ffffff">CONVERSATION HISTORY</text>
+  <text x="100" y="342"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#c4baea">User: "Do you sell laptops?"   Assistant: "Yes, we carry the Contoso Pro and Contoso Air lines."   ...</text>
+
+  <!-- Layer 3: User message -->
+  <rect x="80" y="360" width="860" height="68" rx="10" fill="#ffffff" fill-opacity="0.07" stroke="#8b7fd4" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="100" y="390"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="700" fill="#ffffff">NEW USER MESSAGE</text>
+  <text x="100" y="416"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#c4baea">"What is the battery life of the Pro model?"</text>
+
+  <!-- Arrow -->
+  <line x1="940" y1="344" x2="1020" y2="344" stroke="#8b7fd4" stroke-width="3"/>
+  <polygon points="1020,332 1042,344 1020,356" fill="#8b7fd4"/>
+
+  <!-- LLM box -->
+  <rect x="1042" y="284" width="240" height="120" rx="14" fill="#ffffff" fill-opacity="0.10" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="1162" y="336"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🧠</text>
+  <text x="1162" y="384"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="600" fill="#ffffff" text-anchor="middle">LLM</text>
+
+  <!-- Arrow out -->
+  <line x1="1282" y1="344" x2="1362" y2="344" stroke="#8b7fd4" stroke-width="3"/>
+  <polygon points="1362,332 1384,344 1362,356" fill="#8b7fd4"/>
+
+  <!-- Response box -->
+  <rect x="1384" y="284" width="476" height="120" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="1622" y="336"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="600" fill="#ffffff" text-anchor="middle">Persona-aware answer</text>
+  <text x="1622" y="372"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#c4baea" text-anchor="middle">"The Contoso Pro offers up to</text>
+  <text x="1622" y="394"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#c4baea" text-anchor="middle">12 hours of battery life."</text>
+
+  <!-- ── Three cards ── -->
+
+  <!-- Card 1: What Is a System Prompt -->
+  <rect x="60" y="460" width="560" height="580" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="460" width="560" height="580" rx="16" fill="url(#cardGlow1)" fill-opacity="0.3"/>
+
+  <text x="340" y="530"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">📋</text>
+  <text x="340" y="588"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">What Is It?</text>
+  <rect x="120" y="606" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="340" y="652"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">A privileged instruction sent</text>
+  <text x="340" y="688"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">before the user's first message.</text>
+  <text x="340" y="734"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">The model treats it as</text>
+  <text x="340" y="770"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">authoritative context, not as</text>
+  <text x="340" y="806"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">a request to fulfil.</text>
+  <text x="340" y="862"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Invisible to the user —</text>
+  <text x="340" y="896"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">visible to every answer.</text>
+
+  <!-- Card 2: What You Can Do -->
+  <rect x="680" y="460" width="560" height="580" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="460" width="560" height="580" rx="16" fill="url(#cardGlow2)" fill-opacity="0.3"/>
+
+  <text x="960" y="530"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🎭</text>
+  <text x="960" y="588"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">What You Can Do</text>
+  <rect x="740" y="606" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="960" y="652"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Assign a persona or role</text>
+  <text x="960" y="700"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Restrict scope of answers</text>
+  <text x="960" y="748"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Set tone and language style</text>
+  <text x="960" y="796"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Inject business context</text>
+  <text x="960" y="844"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Define output format</text>
+  <text x="960" y="900"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">"You are a ten-year-old child.</text>
+  <text x="960" y="932"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Answer in simple words."</text>
+
+  <!-- Card 3: Still Stateless -->
+  <rect x="1300" y="460" width="560" height="580" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="1300" y="460" width="560" height="580" rx="16" fill="url(#cardGlow3)" fill-opacity="0.3"/>
+
+  <text x="1580" y="530"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">⚠️</text>
+  <text x="1580" y="588"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Still Stateless</text>
+  <rect x="1360" y="606" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="1580" y="652"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">The model stores nothing.</text>
+  <text x="1580" y="698"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">System prompt + full history</text>
+  <text x="1580" y="734"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">must be resent every call.</text>
+  <text x="1580" y="790"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Longer prompts cost more</text>
+  <text x="1580" y="826"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">tokens per request.</text>
+  <text x="1580" y="882"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">It is guidance, not a hard lock —</text>
+  <text x="1580" y="914"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">the model can still be coaxed</text>
+  <text x="1580" y="946"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">away from its instructions.</text>
+</svg>

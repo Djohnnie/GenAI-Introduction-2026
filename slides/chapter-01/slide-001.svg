@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="circleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c70c8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Decorative circles — top right -->
+  <circle cx="1750" cy="150" r="460" fill="url(#circleGlow)"/>
+  <circle cx="1750" cy="150" r="320" fill="none" stroke="#6a5fb8" stroke-width="1.5" opacity="0.35"/>
+  <circle cx="1750" cy="150" r="200" fill="none" stroke="#6a5fb8" stroke-width="1" opacity="0.25"/>
+
+  <!-- Decorative circles — bottom left -->
+  <circle cx="160" cy="960" r="380" fill="url(#circleGlow)"/>
+  <circle cx="160" cy="960" r="260" fill="none" stroke="#6a5fb8" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4" rx="0"/>
+
+  <!-- Title -->
+  <text
+    x="960" y="490"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="130"
+    font-weight="800"
+    fill="#ffffff"
+    text-anchor="middle"
+    letter-spacing="-3">GenAI Introduction</text>
+
+  <!-- Accent separator -->
+  <rect x="660" y="544" width="600" height="4" fill="#8b7fd4" rx="2"/>
+
+  <!-- Subtitle line 1 -->
+  <text
+    x="960" y="636"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48"
+    font-weight="300"
+    fill="#c4baea"
+    text-anchor="middle"
+    letter-spacing="1">Building AI agents with .NET &amp; Azure</text>
+
+  <!-- Subtitle line 2 -->
+  <text
+    x="960" y="706"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48"
+    font-weight="300"
+    fill="#c4baea"
+    text-anchor="middle"
+    letter-spacing="1">From language models to production-grade agents</text>
+</svg>

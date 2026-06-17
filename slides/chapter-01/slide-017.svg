@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cardGlow1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">The Chatbot with History Pattern</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- ── Flow diagram ── -->
+
+  <!-- Turn 1 bubble -->
+  <rect x="60" y="168" width="340" height="100" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="230" y="208"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">Turn 1 message</text>
+  <text x="230" y="246"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#c4baea" text-anchor="middle">"What is the capital of France?"</text>
+
+  <!-- Arrow 1 -->
+  <line x1="400" y1="218" x2="480" y2="218" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="480,208 498,218 480,228" fill="#8b7fd4"/>
+
+  <!-- LLM box -->
+  <rect x="498" y="158" width="340" height="120" rx="14" fill="#ffffff" fill-opacity="0.10" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="668" y="208"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" fill="#8b7fd4" text-anchor="middle">🧠</text>
+  <text x="668" y="250"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">LLM — stateless</text>
+
+  <!-- Arrow 2 -->
+  <line x1="838" y1="218" x2="918" y2="218" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="918,208 936,218 918,228" fill="#8b7fd4"/>
+
+  <!-- Answer bubble -->
+  <rect x="936" y="168" width="340" height="100" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="1106" y="208"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">Answer stored</text>
+  <text x="1106" y="246"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#c4baea" text-anchor="middle">"Paris" → added to history</text>
+
+  <!-- Down arrow to turn 2 -->
+  <line x1="1106" y1="268" x2="1106" y2="308" stroke="#8b7fd4" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Turn 2 bubble -->
+  <rect x="756" y="308" width="700" height="100" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="1106" y="348"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">Turn 2 — full history resent</text>
+  <text x="1106" y="388"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#c4baea" text-anchor="middle">[Turn 1 Q+A] + "What is its population?"</text>
+
+  <!-- Arrow to LLM turn 2 -->
+  <line x1="756" y1="358" x2="676" y2="358" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="676,348 658,358 676,368" fill="#8b7fd4"/>
+
+  <!-- LLM box turn 2 -->
+  <rect x="498" y="308" width="158" height="100" rx="14" fill="#ffffff" fill-opacity="0.10" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="577" y="368"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" fill="#8b7fd4" text-anchor="middle">🧠</text>
+
+  <!-- Answer turn 2 -->
+  <line x1="498" y1="358" x2="418" y2="358" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="418,348 400,358 418,368" fill="#8b7fd4"/>
+  <rect x="60" y="308" width="340" height="100" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="230" y="348"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">Context-aware answer</text>
+  <text x="230" y="388"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#c4baea" text-anchor="middle">"About 2.1 million"</text>
+
+  <!-- Key insight label -->
+  <rect x="1376" y="168" width="504" height="240" rx="14" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="1628" y="222"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="700" fill="#8b7fd4" text-anchor="middle">Key Insight</text>
+  <rect x="1416" y="234" width="424" height="2" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="1628" y="274"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">The LLM is stateless.</text>
+  <text x="1628" y="310"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">It remembers nothing</text>
+  <text x="1628" y="346"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">between calls.</text>
+  <text x="1628" y="382"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">You bring the context.</text>
+
+  <!-- ── Three cards ── -->
+
+  <!-- Card 1: How It Works -->
+  <rect x="60" y="450" width="560" height="590" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="450" width="560" height="590" rx="16" fill="url(#cardGlow1)" fill-opacity="0.3"/>
+
+  <text x="340" y="522"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🔄</text>
+  <text x="340" y="580"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">How It Works</text>
+  <rect x="120" y="598" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="340" y="644"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Every request includes the</text>
+  <text x="340" y="680"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">full conversation history.</text>
+  <text x="340" y="726"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">The model sees all prior</text>
+  <text x="340" y="762"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">turns and answers in</text>
+  <text x="340" y="798"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">context — but only because</text>
+  <text x="340" y="834"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">you resent them each time.</text>
+  <text x="340" y="888"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">The illusion of memory</text>
+  <text x="340" y="920"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">is client-side bookkeeping.</text>
+
+  <!-- Card 2: What This Unlocks -->
+  <rect x="680" y="450" width="560" height="590" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="450" width="560" height="590" rx="16" fill="url(#cardGlow2)" fill-opacity="0.3"/>
+
+  <text x="960" y="522"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">✅</text>
+  <text x="960" y="580"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">What This Unlocks</text>
+  <rect x="740" y="598" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="960" y="652"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Follow-up questions</text>
+  <text x="960" y="700"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Pronoun resolution</text>
+  <text x="960" y="748"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Iterative refinement</text>
+  <text x="960" y="796"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Multi-turn reasoning</text>
+  <text x="960" y="844"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Conversational UX</text>
+  <text x="960" y="900"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Still based on training data —</text>
+  <text x="960" y="932"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">hope for the best</text>
+
+  <!-- Card 3: Watch Out For -->
+  <rect x="1300" y="450" width="560" height="590" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="1300" y="450" width="560" height="590" rx="16" fill="url(#cardGlow3)" fill-opacity="0.3"/>
+
+  <text x="1580" y="522"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">⚠️</text>
+  <text x="1580" y="580"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Watch Out For</text>
+  <rect x="1360" y="598" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="1580" y="652"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Token budget grows each turn</text>
+  <text x="1580" y="700"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Long chats hit context limit</text>
+  <text x="1580" y="748"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Cost rises with history length</text>
+  <text x="1580" y="796"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Still no real-time data</text>
+  <text x="1580" y="844"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Still no access to your data</text>
+  <text x="1580" y="900"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Long sessions need summarisation</text>
+  <text x="1580" y="932"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">or truncation strategies</text>
+</svg>

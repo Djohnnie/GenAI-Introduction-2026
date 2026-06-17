@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cardGlow1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">The General Chatbot Pattern</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- ── Flow diagram ── -->
+
+  <!-- User bubble -->
+  <rect x="100" y="180" width="340" height="120" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="270" y="228"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" fill="#8b7fd4" text-anchor="middle">💬</text>
+  <text x="270" y="274"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#ffffff" text-anchor="middle">User Question</text>
+
+  <!-- Arrow 1 -->
+  <line x1="440" y1="240" x2="560" y2="240" stroke="#8b7fd4" stroke-width="3"/>
+  <polygon points="560,228 580,240 560,252" fill="#8b7fd4"/>
+
+  <!-- LLM bubble -->
+  <rect x="580" y="160" width="760" height="160" rx="16" fill="#ffffff" fill-opacity="0.10" stroke="#8b7fd4" stroke-width="2"/>
+  <text x="960" y="228"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" fill="#8b7fd4" text-anchor="middle">🧠</text>
+  <text x="960" y="274"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#ffffff" text-anchor="middle">LLM — trained on internet-scale data</text>
+  <text x="960" y="306"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">answers purely from patterns learned during training</text>
+
+  <!-- Arrow 2 -->
+  <line x1="1340" y1="240" x2="1460" y2="240" stroke="#8b7fd4" stroke-width="3"/>
+  <polygon points="1460,228 1480,240 1460,252" fill="#8b7fd4"/>
+
+  <!-- Answer bubble -->
+  <rect x="1480" y="180" width="340" height="120" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="1650" y="228"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" fill="#8b7fd4" text-anchor="middle">✉️</text>
+  <text x="1650" y="274"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#ffffff" text-anchor="middle">Best-effort Answer</text>
+
+  <!-- ── Three cards ── -->
+
+  <!-- Card 1: The Pattern -->
+  <rect x="60" y="380" width="560" height="660" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="380" width="560" height="660" rx="16" fill="url(#cardGlow1)" fill-opacity="0.3"/>
+
+  <text x="340" y="456"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">⚡</text>
+  <text x="340" y="516"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" font-weight="700" fill="#ffffff" text-anchor="middle">The Pattern</text>
+  <rect x="120" y="534" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="340" y="578"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">No retrieval, no tools,</text>
+  <text x="340" y="614"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">no grounding — just the model</text>
+  <text x="340" y="650"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">and its training data.</text>
+  <text x="340" y="706"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Zero configuration.</text>
+  <text x="340" y="742"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Fastest pattern to ship.</text>
+  <text x="340" y="808"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="600" fill="#8b7fd4" text-anchor="middle">You ask. It answers.</text>
+  <text x="340" y="848"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Hope for the best.</text>
+
+  <!-- Card 2: Works Best For -->
+  <rect x="680" y="380" width="560" height="660" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="380" width="560" height="660" rx="16" fill="url(#cardGlow2)" fill-opacity="0.3"/>
+
+  <text x="960" y="456"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">✅</text>
+  <text x="960" y="516"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" font-weight="700" fill="#ffffff" text-anchor="middle">Works Best For</text>
+  <rect x="740" y="534" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="960" y="586"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">General knowledge questions</text>
+  <text x="960" y="634"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Explaining concepts</text>
+  <text x="960" y="682"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Summarising documents</text>
+  <text x="960" y="730"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Brainstorming &amp; drafting</text>
+  <text x="960" y="778"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Translation &amp; rephrasing</text>
+  <text x="960" y="826"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Code generation</text>
+  <text x="960" y="900"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Approximate or slightly dated</text>
+  <text x="960" y="932"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">answers are acceptable</text>
+
+  <!-- Card 3: Watch Out For -->
+  <rect x="1300" y="380" width="560" height="660" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="1300" y="380" width="560" height="660" rx="16" fill="url(#cardGlow3)" fill-opacity="0.3"/>
+
+  <text x="1580" y="456"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">⚠️</text>
+  <text x="1580" y="516"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="36" font-weight="700" fill="#ffffff" text-anchor="middle">Watch Out For</text>
+  <rect x="1360" y="534" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="1580" y="586"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Knowledge cutoff date</text>
+  <text x="1580" y="634"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Confident hallucinations</text>
+  <text x="1580" y="682"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">No real-time information</text>
+  <text x="1580" y="730"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">No access to your data</text>
+  <text x="1580" y="778"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">No memory between sessions</text>
+  <text x="1580" y="826"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Answers vary across runs</text>
+  <text x="1580" y="900"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Every subsequent chapter</text>
+  <text x="1580" y="932"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">addresses one of these gaps</text>
+</svg>

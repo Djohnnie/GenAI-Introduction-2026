@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cardGlow1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Types of Machine Learning</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- Column 1: Supervised Learning -->
+  <rect x="60" y="180" width="560" height="840" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="180" width="560" height="840" rx="16" fill="url(#cardGlow1)" fill-opacity="0.3"/>
+
+  <text x="340" y="260"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">📚</text>
+  <text x="340" y="330"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Supervised</text>
+  <text x="340" y="376"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Learning</text>
+
+  <rect x="120" y="410" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+
+  <text x="340" y="460"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">How it works</text>
+  <text x="340" y="500"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Train on labelled examples</text>
+  <text x="340" y="540"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">(input → correct output)</text>
+
+  <text x="340" y="610"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">Examples</text>
+  <text x="340" y="650"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Email spam detection</text>
+  <text x="340" y="690"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Image classification</text>
+  <text x="340" y="730"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">House price prediction</text>
+
+  <text x="340" y="810"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">Key requirement</text>
+  <text x="340" y="852"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Large labelled dataset</text>
+  <text x="340" y="892"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">with known answers</text>
+
+  <!-- Column 2: Unsupervised Learning -->
+  <rect x="680" y="180" width="560" height="840" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="180" width="560" height="840" rx="16" fill="url(#cardGlow2)" fill-opacity="0.3"/>
+
+  <text x="960" y="260"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">🔍</text>
+  <text x="960" y="330"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Unsupervised</text>
+  <text x="960" y="376"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Learning</text>
+
+  <rect x="740" y="410" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+
+  <text x="960" y="460"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">How it works</text>
+  <text x="960" y="500"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Find hidden patterns</text>
+  <text x="960" y="540"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">in unlabelled data</text>
+
+  <text x="960" y="610"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">Examples</text>
+  <text x="960" y="650"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Customer segmentation</text>
+  <text x="960" y="690"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Anomaly detection</text>
+  <text x="960" y="730"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Topic modelling</text>
+
+  <text x="960" y="810"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">Key requirement</text>
+  <text x="960" y="852"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Data only — no labels</text>
+  <text x="960" y="892"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">or correct answers needed</text>
+
+  <!-- Column 3: Reinforcement Learning -->
+  <rect x="1300" y="180" width="560" height="840" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="1300" y="180" width="560" height="840" rx="16" fill="url(#cardGlow3)" fill-opacity="0.3"/>
+
+  <text x="1580" y="260"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="48" fill="#8b7fd4" text-anchor="middle">🏆</text>
+  <text x="1580" y="330"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Reinforcement</text>
+  <text x="1580" y="376"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Learning</text>
+
+  <rect x="1360" y="410" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+
+  <text x="1580" y="460"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">How it works</text>
+  <text x="1580" y="500"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Agent learns by trial</text>
+  <text x="1580" y="540"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">&amp; error via rewards</text>
+
+  <text x="1580" y="610"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">Examples</text>
+  <text x="1580" y="650"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Game-playing AI (AlphaGo)</text>
+  <text x="1580" y="690"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">Robot locomotion</text>
+  <text x="1580" y="730"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">RLHF for LLMs</text>
+
+  <text x="1580" y="810"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="30" font-weight="600" fill="#8b7fd4" text-anchor="middle">Key requirement</text>
+  <text x="1580" y="852"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">An environment and</text>
+  <text x="1580" y="892"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="28" font-weight="300" fill="#c4baea" text-anchor="middle">a reward signal</text>
+</svg>

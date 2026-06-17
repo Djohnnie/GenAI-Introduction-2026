@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cardGlow1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlow3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b5fb5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Running Local LLMs with Ollama</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- ── Flow diagram ── -->
+
+  <!-- App box: center y=295 -->
+  <rect x="60" y="178" width="270" height="234" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="195" y="228"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" fill="#8b7fd4" text-anchor="middle">💻</text>
+  <text x="195" y="272"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">Your Application</text>
+  <text x="195" y="308"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0" text-anchor="middle">OllamaApiClient</text>
+  <text x="195" y="338"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0" text-anchor="middle">IChatClient interface</text>
+  <text x="195" y="366"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0" text-anchor="middle">(same as cloud)</text>
+
+  <!-- Arrow 1 -->
+  <line x1="330" y1="295" x2="408" y2="295" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="408,283 430,295 408,307" fill="#8b7fd4"/>
+  <text x="369" y="279"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="18" font-weight="300" fill="#a89fd0" text-anchor="middle">HTTP</text>
+
+  <!-- Ollama main box: center y=295 -->
+  <rect x="430" y="158" width="880" height="274" rx="16" fill="#ffffff" fill-opacity="0.10" stroke="#8b7fd4" stroke-width="2"/>
+
+  <!-- Ollama title -->
+  <text x="800" y="206"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" fill="#8b7fd4" text-anchor="middle">🦙</text>
+  <text x="828" y="212"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" font-weight="700" fill="#ffffff" text-anchor="start">Ollama</text>
+
+  <!-- Model pills -->
+  <rect x="462" y="228" width="172" height="36" rx="18" fill="#8b7fd4" fill-opacity="0.35" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="548" y="252"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">llama3.2:3b</text>
+
+  <rect x="646" y="228" width="84" height="36" rx="18" fill="#8b7fd4" fill-opacity="0.35" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="688" y="252"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">phi4</text>
+
+  <rect x="742" y="228" width="112" height="36" rx="18" fill="#8b7fd4" fill-opacity="0.35" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="798" y="252"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">mistral</text>
+
+  <rect x="866" y="228" width="112" height="36" rx="18" fill="#8b7fd4" fill-opacity="0.35" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="922" y="252"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">gemma3</text>
+
+  <rect x="990" y="228" width="112" height="36" rx="18" fill="#8b7fd4" fill-opacity="0.35" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="1046" y="252"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">qwen2.5</text>
+
+  <rect x="1114" y="228" width="160" height="36" rx="18" fill="#8b7fd4" fill-opacity="0.35" stroke="#8b7fd4" stroke-width="1"/>
+  <text x="1194" y="252"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">deepseek-r1</text>
+
+  <!-- Description texts inside Ollama box -->
+  <text x="870" y="306"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Runs entirely on your machine — no data leaves</text>
+  <text x="870" y="344"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#a89fd0" text-anchor="middle">localhost:11434  ·  REST API compatible with OpenAI spec</text>
+  <text x="870" y="382"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22" font-weight="300" fill="#a89fd0" text-anchor="middle">No internet connection  ·  No API key  ·  No per-token billing</text>
+
+  <!-- Arrow 2 -->
+  <line x1="1310" y1="295" x2="1388" y2="295" stroke="#8b7fd4" stroke-width="2.5"/>
+  <polygon points="1388,283 1410,295 1388,307" fill="#8b7fd4"/>
+
+  <!-- Response box: center y=295 -->
+  <rect x="1410" y="178" width="450" height="234" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#8b7fd4" stroke-width="1.5"/>
+  <text x="1635" y="228"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="40" fill="#8b7fd4" text-anchor="middle">✅</text>
+  <text x="1635" y="272"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">Response</text>
+  <text x="1635" y="308"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#c4baea" text-anchor="middle">+ Tool Calls</text>
+  <text x="1635" y="352"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0" text-anchor="middle">Identical to Azure OpenAI</text>
+  <text x="1635" y="378"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="20" font-weight="300" fill="#a89fd0" text-anchor="middle">from the application's view</text>
+
+  <!-- ── Three cards ── -->
+
+  <!-- Card 1: Why Run Locally? -->
+  <rect x="60" y="468" width="560" height="578" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="60" y="468" width="560" height="578" rx="16" fill="url(#cardGlow1)" fill-opacity="0.3"/>
+
+  <text x="340" y="536"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🏠</text>
+  <text x="340" y="594"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Why Run Locally?</text>
+  <rect x="120" y="612" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="340" y="658"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Data never leaves your machine</text>
+  <text x="340" y="704"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">No per-token API cost</text>
+  <text x="340" y="750"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">No rate limits or quotas</text>
+  <text x="340" y="796"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Works offline &amp; air-gapped</text>
+  <text x="340" y="856"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Install a model with</text>
+  <text x="340" y="890"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">ollama pull &lt;model&gt;</text>
+
+  <!-- Card 2: Tool Call Support -->
+  <rect x="680" y="468" width="560" height="578" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="680" y="468" width="560" height="578" rx="16" fill="url(#cardGlow2)" fill-opacity="0.3"/>
+
+  <text x="960" y="536"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">🔧</text>
+  <text x="960" y="594"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Tool Call Support</text>
+  <rect x="740" y="612" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="960" y="658"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Many models support function</text>
+  <text x="960" y="694"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">calling out of the box</text>
+  <text x="960" y="750"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Same AIFunctionFactory pattern</text>
+  <text x="960" y="796"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">as Azure OpenAI — drop-in swap</text>
+  <text x="960" y="856"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">llama3.2, phi4, qwen2.5,</text>
+  <text x="960" y="890"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">mistral-nemo all work well</text>
+
+  <!-- Card 3: The Tradeoff -->
+  <rect x="1300" y="468" width="560" height="578" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#8b7fd4" stroke-width="1.5"/>
+  <rect x="1300" y="468" width="560" height="578" rx="16" fill="url(#cardGlow3)" fill-opacity="0.3"/>
+
+  <text x="1580" y="536"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="44" fill="#8b7fd4" text-anchor="middle">⚖️</text>
+  <text x="1580" y="594"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">The Tradeoff</text>
+  <rect x="1360" y="612" width="440" height="3" fill="#8b7fd4" fill-opacity="0.5"/>
+  <text x="1580" y="658"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Smaller models (1B–13B params)</text>
+  <text x="1580" y="704"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Less capable on complex tasks</text>
+  <text x="1580" y="750"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">CPU works, GPU helps a lot</text>
+  <text x="1580" y="796"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26" font-weight="300" fill="#c4baea" text-anchor="middle">Quality varies across models</text>
+  <text x="1580" y="856"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">Pick the model that fits your</text>
+  <text x="1580" y="890"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="24" font-weight="300" fill="#a89fd0" text-anchor="middle">hardware and use case</text>
+</svg>

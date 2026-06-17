@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4" rx="0"/>
+
+  <!-- Title -->
+  <text
+    x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="-1">AI Is Not One Thing — A Quick Taxonomy</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4" rx="0"/>
+
+  <!-- Item 1: Narrow AI vs. AGI -->
+  <circle cx="92" cy="207" r="7" fill="#8b7fd4"/>
+  <text x="115" y="215" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Narrow AI vs. AGI</text>
+  <text x="115" y="255" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">Everything in use today (including Copilot) is narrow AI — AGI remains theoretical</text>
+
+  <!-- Item 2: Discriminative AI -->
+  <circle cx="92" cy="347" r="7" fill="#8b7fd4"/>
+  <text x="115" y="355" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Discriminative AI</text>
+  <text x="115" y="395" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">Classifies or predicts from existing data — spam detection, churn prediction, most traditional ML</text>
+
+  <!-- Item 3: Generative AI -->
+  <circle cx="92" cy="487" r="7" fill="#8b7fd4"/>
+  <text x="115" y="495" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Generative AI</text>
+  <text x="115" y="535" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">Produces new content (text, code, images, audio) — the model creates rather than classifies</text>
+
+  <!-- Item 4: Large Language Models -->
+  <circle cx="92" cy="627" r="7" fill="#8b7fd4"/>
+  <text x="115" y="635" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Large Language Models (LLMs)</text>
+  <text x="115" y="675" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">A type of generative AI trained on text and code — powers Copilot, ChatGPT, Claude, Gemini</text>
+
+  <!-- Item 5: Other categories -->
+  <circle cx="92" cy="767" r="7" fill="#8b7fd4"/>
+  <text x="115" y="775" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Other AI Categories</text>
+  <text x="115" y="815" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">Computer Vision, Speech Recognition, Recommender Systems — you've used all of these already</text>
+
+  <!-- Item 6: Where Copilot fits -->
+  <circle cx="92" cy="907" r="7" fill="#8b7fd4"/>
+  <text x="115" y="915" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="0">Where Copilot Fits</text>
+  <text x="115" y="955" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea" letter-spacing="1">LLM-based generative AI — a code-focused model accessed via your IDE, browser, and CLI</text>
+</svg>

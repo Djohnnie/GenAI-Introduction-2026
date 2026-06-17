@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Beyond Chatbots — What Makes an AI Agent?</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- Item 1 -->
+  <circle cx="92" cy="207" r="7" fill="#8b7fd4"/>
+  <text x="115" y="215"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff">Autonomy &amp; Action</text>
+  <text x="115" y="253"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea">Takes initiative and performs tasks — not just responding, but doing</text>
+
+  <!-- Item 2 -->
+  <circle cx="92" cy="347" r="7" fill="#8b7fd4"/>
+  <text x="115" y="355"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff">Memory &amp; State</text>
+  <text x="115" y="393"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea">Maintains conversation history and context across interactions</text>
+
+  <!-- Item 3 -->
+  <circle cx="92" cy="487" r="7" fill="#8b7fd4"/>
+  <text x="115" y="495"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff">Tool Integration</text>
+  <text x="115" y="533"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea">Uses APIs, functions, and external systems to get things done</text>
+
+  <!-- Item 4 -->
+  <circle cx="92" cy="627" r="7" fill="#8b7fd4"/>
+  <text x="115" y="635"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff">Planning &amp; Reasoning</text>
+  <text x="115" y="673"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea">Makes decisions, chains actions, and solves multi-step problems</text>
+
+  <!-- Item 5 -->
+  <circle cx="92" cy="767" r="7" fill="#8b7fd4"/>
+  <text x="115" y="775"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff">Reactive vs. Proactive</text>
+  <text x="115" y="813"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea">Chatbots wait for input — agents can trigger actions based on conditions</text>
+
+  <!-- Item 6 -->
+  <circle cx="92" cy="907" r="7" fill="#8b7fd4"/>
+  <text x="115" y="915"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff">Real-World Impact</text>
+  <text x="115" y="953"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#c4baea">From passive conversation to active assistance — agents get work done</text>
+</svg>

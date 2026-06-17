@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#524a96" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3c356c" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="1080" fill="#8b7fd4"/>
+
+  <!-- Title -->
+  <text x="80" y="108"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="72" font-weight="700" fill="#ffffff" letter-spacing="-1">Chatbot vs. Agent — Key Differences</text>
+
+  <!-- Title underline -->
+  <rect x="0" y="140" width="1920" height="4" fill="#8b7fd4"/>
+
+  <!-- Divider between columns -->
+  <rect x="956" y="160" width="3" height="900" fill="#8b7fd4" opacity="0.5"/>
+
+  <!-- ── LEFT COLUMN: CHATBOT ── -->
+  <text x="490" y="210" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="46" font-weight="700" fill="#c4baea" letter-spacing="2">CHATBOT</text>
+  <rect x="80" y="226" width="826" height="3" fill="#8b7fd4" opacity="0.6"/>
+
+  <!-- Row 1 -->
+  <text x="115" y="290"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Reactive</text>
+  <text x="115" y="326"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Waits for user input — responds once per turn</text>
+
+  <!-- Row 2 -->
+  <text x="115" y="410"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Text in → Text out</text>
+  <text x="115" y="446"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Generates a reply — takes no external action</text>
+
+  <!-- Row 3 -->
+  <text x="115" y="530"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Stateless by default</text>
+  <text x="115" y="566"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Each response is independent unless history is passed</text>
+
+  <!-- Row 4 -->
+  <text x="115" y="650"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Single-step reasoning</text>
+  <text x="115" y="686"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Answers the question as given — no follow-up actions</text>
+
+  <!-- Row 5 -->
+  <text x="115" y="770"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">No tool access</text>
+  <text x="115" y="806"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Knowledge limited to training data and context window</text>
+
+  <!-- Row 6 -->
+  <text x="115" y="890"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Conversation only</text>
+  <text x="115" y="926"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Cannot affect the world outside the chat window</text>
+
+  <!-- ── RIGHT COLUMN: AGENT ── -->
+  <text x="1430" y="210" text-anchor="middle"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="46" font-weight="700" fill="#ffffff" letter-spacing="2">AGENT</text>
+  <rect x="1014" y="226" width="826" height="3" fill="#8b7fd4" opacity="0.6"/>
+
+  <!-- Row 1 -->
+  <text x="1049" y="290"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Proactive</text>
+  <text x="1049" y="326"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Can trigger actions based on goals and conditions</text>
+
+  <!-- Row 2 -->
+  <text x="1049" y="410"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Perceive → Reason → Act</text>
+  <text x="1049" y="446"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Calls tools, APIs, and functions to get work done</text>
+
+  <!-- Row 3 -->
+  <text x="1049" y="530"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Memory &amp; persistent state</text>
+  <text x="1049" y="566"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Maintains context across turns, sessions, and restarts</text>
+
+  <!-- Row 4 -->
+  <text x="1049" y="650"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Multi-step reasoning</text>
+  <text x="1049" y="686"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Plans, chains actions, and iterates until the goal is met</text>
+
+  <!-- Row 5 -->
+  <text x="1049" y="770"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Tool &amp; MCP integration</text>
+  <text x="1049" y="806"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Reaches external systems, databases, and services</text>
+
+  <!-- Row 6 -->
+  <text x="1049" y="890"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#ffffff">Real-world impact</text>
+  <text x="1049" y="926"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="#c4baea">Sends emails, writes code, searches the web, and more</text>
+</svg>
